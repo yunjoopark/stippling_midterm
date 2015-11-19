@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{computational-geometry-book}
+Mark Overmars Otfried Cheong~Schwarzkopf Mark~de Berg, Marc van~Kreveld.
+\newblock {\em Computational Geometry: Algorithms and Applications}.
+\newblock Springer-Verlag, 2008.
+
+\bibitem{weighted-voronoi-stippling}
+Adrian Secord.
+\newblock Weighted vornoi stippling.
+\newblock In {\em Proceedings of the 2nd international symposium on
+  Non-photorealistic animation and rendering}.
+
+\bibitem{saliences}
+Sahab Yazdani.
+\newblock saliences.com: weighted voronoi stippling.
+
+\end{thebibliography}

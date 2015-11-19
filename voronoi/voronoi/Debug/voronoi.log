@@ -1,0 +1,20 @@
+﻿빌드 시작: 2015-11-08 오후 4:27:14
+2 노드의 "C:\Users\Yunjoo\Documents\projects\stippling\voronoi\voronoi\voronoi.vcxproj" 프로젝트(Build 대상)입니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Yunjoo\Documents\projects\boost_1_56_0 /IC:\Users\Yunjoo\Documents\projects\stippling\voronoi\stippler /IC:\Users\Yunjoo\Documents\projects\stippling\voronoi\picopng /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt parse_arguments.cpp voronoi.cpp
+  voronoi.cpp
+  parse_arguments.cpp
+c:\users\yunjoo\documents\projects\stippling\voronoi\voronoi\parse_arguments.cpp(117): warning C4996: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::copy': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(1798) : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::copy' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\voronoi.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Yunjoo\Documents\projects\boost_1_56_0\stage\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\voronoi.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\voronoi.lib" /MACHINE:X86 Debug\parse_arguments.obj
+  Debug\voronoi.obj
+  C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\picopng.lib
+  C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.lib
+  voronoi.vcxproj -> C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\voronoi.exe
+"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\voronoi\voronoi.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:05

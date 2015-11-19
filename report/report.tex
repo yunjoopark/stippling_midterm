@@ -1,0 +1,283 @@
+\documentclass[11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pseudocode}
+\usepackage{url}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{makebox}
+\usepackage{mathtools}
+\usepackage{svg}
+\usepackage{xcolor}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage[backref, colorlinks=true, citecolor=red, urlcolor=blue, pdfauthor={Jyh-Ming Lien}]{hyperref}
+
+
+\newcommand{\handout}[5]{
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { {\bf } \hfill #2 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { {\em #3 \hfill #4} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newcommand{\lecture}[4]{\handout{#1}{#2}{#3}{#4}{#1}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+% 1-inch margins, from fullpage.sty by H.Partl, Version 2, Dec. 15, 1988.
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.9in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0.5in
+\textwidth 6.5in
+
+\parindent 0in
+\parskip 1.5ex
+%\renewcommand{\baselinestretch}{1.25}
+
+\begin{document}
+
+\lecture{Midterm Exam Report}{Fall 2015}{Yunjoo Park}{Advance Algorithm Programming}
+
+\section{Summary of the two methods}
+A \textit{Voronoi diagram} of a given point set $P$ is the subdivision of the plane into $n$ cells based on distance to points, one for each site of $P$, with the property that a point $q$ lies in the cell corresponding to a site $p_i$ if and only if $dist(q, p_i ) < dist(q, p_j )$ for each $p_j \in P$ with $j \ne i$\cite{computational-geometry-book}. A \textit{Centroidal Voronoi Tessellation} (CVT) is a special type of Voronoi diagrams. In the CVT, the point of each voronoi cell is the center of mass. Especially, a \textit{Weighted Centroidal Voronoi Diagram} (WCVT) is a CVT in which each centroid is weighted according to a certain function. 
+There are two methods to generate stipple drawings from images using weighted centroidal Voronoi diagrams. Both are based on the paper, "Weighted Voronoi Stipples"\cite{weighted-voronoi-stipples}. One is implemented by hedcuter. The other is implemted by voronoi method. Both generate well-spaced sets of points.
+\subsection{hedcuter method}
+This method is one way to generate stipple drawings from input image. This uses weighted centroidal voronoi diagram. Input is any image file and output is svg file. The program could have options below.
+\begin{table}[hbt]
+\centering
+\begin{tabular}{|l||l|l|l|}  
+\hline
+Parameter & Arg. & default & Description\\
+\hline\hline
+-debug & X & false & Output with debugging information\\  
+\hline
+-n & O & 1000 & Sample size\\
+\hline
+-uniform\_radius & X & false & True, then all disks have the same radius\\
+\hline
+-radius & O & 1 &
+\vtop{\hbox{\strut  If uniform\_disk is true, all disks have the disk size of the value.}\hbox{\strut Otherwise, the largest disks will have the disk size of the value.}} \\
+\hline
+-iteration & O & 100 & Centroidal voronoid tessellation iteration limit\\
+\hline
+-maxD & O & 1.01f & Max of site displacement\\
+\hline
+-black & X & false & True, then black disk\\
+\hline
+\end{tabular}
+\caption{Hedcuter method's options}
+\label{hedcutermethodoptions}
+\end{table}
+
+This program uses Discrete Stippling algorithm\cite{weighted-voronoi-stippling} to stipple an image quickly.
+
+\begin{figure}[hbt]
+\centering
+\begin{minipage}{0.7\textwidth}
+
+\begin{algorithm}[H]
+\caption{Discrete Stippling}
+\label{discretestippling}
+\begin{algorithmic}
+\ForAll{pixel positions $(x, y) \in [0,1]$ x $[0,1]$} 
+
+	\State Map image value at $(x, y)$ to stipple level $l$
+	\State Copy stipples on level $l$ inside $(x-\frac{1}{2}, y-\frac{1}{2})$ x $(x+\frac{1}{2}, y+\frac{1}{2})$
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+\end{minipage}
+\end{figure}
+
+\clearpage
+In the program, build process undergoes several steps. 
+\begin{description}
+  \item[First] Initialize sample points
+  \item[Second] Compute a Weighted Voronoi Tessellation
+	\begin{enumerate}
+	  \item compute voronoi
+	  \item move the site to the center of its coverage
+	\end{enumerate}
+  \item[Third] Create disks
+\end{description}
+The method use 256 as the number required in a pure black image. We call the number $N$.
+\\ \\
+First of all, hedcuter generates sample initial $n$ points. To be specific, $n$ is initialized by \textit{user}, or default value is 1000. For generating random points, it uses RNG (Random Number Generator). The random points are generated and distributed uniformly. The hedcuter calculates their value based on each color. If the point is close to black, the value is close to 0. On the contrary, if the point is close to white, the value is close to 1. This value is used to determines which points are appropriate. The points are decided whether to keep or not by comparing the value with a random number sampled from the gaussian distribution. 
+\\ \\
+Second part is main of the hedcuter. At first, the hedcuter copy all points to \textit{stipples} and calculate \textit{distance} for stipples. The distance of each stipple is obtained by converting its color intensity to distance value [0, 1] by equation (\ref{eq:colortodist}). Let $Indensity(s)$ be the color intensity and $distance(s)$ be the distance of the stipple.
+\begin{equation}
+distance(s) = \frac{\left(N-Intensity\left(s\right)\right)*1.0f}{N}
+\label{eq:colortodist}
+\end{equation}
+And then, sort stipples using heap. The next step is about propagation. For each sorted stipple, the hedcuter calculate new distance of its neighbors. $distance_{new}(neighbor) = distance(s) + distance(neighbor)$. If the updated distance is less than old distance of the neighbor, push the neighbor to heap as stipple with the new distance. Finally, after the propagation step, the hedcuter collects cells that is affected by given points. For these cell, the hedcuter compute weighted average distance of cell and move the cell to the new position using the distance. Repeat these process while satisfying the following conditions.
+\begin{itemize}
+  \item the max of the displacement of site at each iteration  $<$ max\_site\_displacement (1.01f)
+  \item the number of iterations $<$ iteration\_limit (option: -iteration)
+\end{itemize}
+
+
+
+\subsection{voronoi method}
+This method is also one way to generate stipple drawings from input image. This uses weighted centroidal voronoi diagram. Input file must be a PNG image. The program could have options below. Specifically, input and output are required\cite{saliences}.
+\begin{table}[hbt]
+\centering
+\begin{tabular}{|l||l|l|l|}  
+\hline
+Param. & Arg. & default & Description\\
+\hline\hline
+-I & O &  & Must be a PNG file.\\  
+\hline
+-O & O &  & The name of the file to output\\
+\hline
+-s & O & 4000 & The number of stipple points to render.\\
+\hline
+-c & X & OFF & Off, output in black and white\\
+\hline
+-t & O & 0.1 & The cut-off point for the convergence of the stippled output.\\
+\hline
+-n & X & OFF & Stipple points will not overlap.\\
+\hline
+-f & X & OFF & ON, then all stipple points have the equal size of radius.\\
+\hline
+-z & O & 1.0 & The radius of each stipple is multiplied by this value.\\
+\hline
+-p & O & 5 & Controls the tile size of centroid computations.\\
+\hline
+-l & X & OFF & ON, then produce an output log.\\
+\hline
+\end{tabular}
+\caption{Voronoi method's options}
+\label{voronoimethodoptions}
+\end{table}
+\\ \\
+As I mentioned before, in CVT, each generating point lies exactly on the centroid of its voronoi region. The centroid of a region is defined as 
+\begin{equation}
+C_i = \frac{\int_{A} x\rho(x), dA}{\int_{A} \rho(x), dA}
+\label{eq:centroid}
+\end{equation}
+where $A$ is the region of the cell, $x$ is the position and $\rho(x)$ is the density function. A centroidal voronoi diagram is a minimum-energy configuration in the sense that it minimize $\int_{A}\rho(x){|C_i-x|}^2$.\cite{weighted-voronoi-stipples}
+This program uses Lloyd's algorithm\cite{weighted-voronoi-stippling} to generate a centroidal Voronoi diagram from any set of generating points.
+\begin{figure}[hbt]
+\centering
+\begin{minipage}{0.7\textwidth}
+
+\begin{algorithm}[H]
+\caption{Lloyd's method}
+\label{lloydmethod}
+\begin{algorithmic}
+\While{generating points $x_i$} 
+	\State Compute the Voronoi diagram of $x_i$
+	\State Compute the centroids $C_i$ using equation (\ref{eq:centroid})
+	\State Move each generating point $x_i$ to its centroid $C_i$
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+\end{minipage}
+\end{figure}
+\\
+The algorithm find evenly spaced sets of points in subsets of Euclidean spaces, and partitions of these subsets into well-shaped and uniformly sized convex cells. That is, Under the algorithm, a voronoi diagram become a centroidal voronoi diagram through relaxation step.
+\\ \\
+The program consists of the following several steps.
+\begin{description}
+  \item[First] Create stipples
+  \item[Second] Loop while (average displacement $>$ threshold)
+	\begin{enumerate}
+	  \item distribute stipples
+		\begin{enumerate}
+	     \item create voronoi diagram
+	     \item redistribute stipples
+		\end{enumerate}
+	\end{enumerate}
+  \item[Third] Render
+\end{description}
+
+The second step is the main part of the program. The voronoi program sorts the given points set to generate(or update during the loop) voronoi. And then, the program calculate the centroid for cells using \textit{calculateCellCentroid()}. The function computes clip lines that is extension of each edge, for all voronoi edges. The clip lines form ploygons. The function tests whether a point is outside of the corresponding polygon or not. If the point is inside the polygon, it gets density from image. The function returns the point of center and radius. In the step of redistribution, the point moves to the center and the average of the displacement, denoted by $t$, is computed. Repeat the processes until $t$ is greater than the $threshold$. 
+
+\section{Comparison of the two methods}
+\subsection{Do you get the same results by running the same program on the same image multiple times?}
+\begin{enumerate}
+	\item Hedcuter
+	\begin{figure}[htbp]
+	  \centering
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h2}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h3}
+	  \caption{phoenix with 5000}
+	  \label{fig:hedcuterphoenix}
+	\end{figure}
+
+	\item Voronoi
+	\begin{figure}[htbp]
+ 	 \centering
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v1}
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v2}
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v3}
+ 	 \caption{phoenix with 5000}
+	\end{figure}
+\end{enumerate}
+While I got the different outputs by running the hedcuter program on the same image multiple times, I obtained the same outputs by running the voronoi program. The hedcuter program generates sample initial points randomly and make a CVT under limit iteration and given max site displacement. Since the initial sample points set are different, the results of propagation are also changed. On the other hand, the voronoi program repeat the series of process until the average of displacement of points is small enough. Thus, we could get the same output multiple times.
+
+\subsection{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}
+
+\begin{enumerate}
+	\item Hedcuter
+	\begin{figure}[htbp]
+ 	 \centering
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-3000-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-10000-h1}
+ 	 \caption{phoenix with \{3000, 5000, 10000\}}
+	\end{figure}
+	\item Voronoi
+	\begin{figure}[htbp]
+ 	 \centering
+
+ 	 \caption{phoenix with 5000}
+	\end{figure}
+\end{enumerate}
+The hedcuter produces the different distribution the number of the disks in the output image, 
+
+
+\subsection{If you vary the number of the disks in the output images, is a method faster the other?}
+\subsection{Does the size (number of pixels), image brightness or contrast of image increase or decrease their difference?}
+\subsection{Does the type of image (human vs. machine, natural vs. urban landscapes, photo vs.painting, etc) increase or decrease their difference?}
+\subsection{Are the outputs of these stippling methods different the hedcut images created by artists (e.g. those from the Wall Street Journal)?}
+
+\section{Improvement of hedcuter method}
+
+\bibliographystyle{plain}
+\bibliography{report}
+
+\end{document}
+
+

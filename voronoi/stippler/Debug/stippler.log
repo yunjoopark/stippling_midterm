@@ -1,0 +1,36 @@
+﻿빌드 시작: 2015-11-07 오후 2:46:09
+2 노드의 "C:\Users\Yunjoo\Documents\projects\stippling\voronoi\stippler\stippler.vcxproj" 프로젝트(Build 대상)입니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Yunjoo\Documents\projects\boost_1_59_0 /IC:\Users\Yunjoo\Documents\projects\stippling\voronoi\picopng /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D STIPPLER_LIBRARY /D _DEBUG /D _WINDOWS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stippler.cpp bitmap.cpp stippler_api.cpp VoronoiDiagramGenerator.cpp
+  VoronoiDiagramGenerator.cpp
+  stippler_api.cpp
+c:\users\yunjoo\documents\projects\stippling\voronoi\stippler\stippler_api.cpp(38): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(195) : 'strncpy' 선언을 참조하십시오.
+  bitmap.cpp
+  stippler.cpp
+c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2715): warning C4996: 'std::_Fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2701) : 'std::_Fill_n' 선언을 참조하십시오.
+          c:\users\yunjoo\documents\projects\boost_1_59_0\boost\random\detail\polynomial.hpp(114) : 컴파일 중인 함수 템플릿 인스턴스화 '_OutIt std::fill_n<boost::random::detail::polynomial_ops::digit_t*,size_t,boost::random::detail::polynomial_ops::digit_t>(_OutIt,_Diff,const _Ty &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              _OutIt=boost::random::detail::polynomial_ops::digit_t *
+  ,            _Diff=size_t
+  ,            _Ty=boost::random::detail::polynomial_ops::digit_t
+          ]
+  코드를 생성하고 있습니다...
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.dll" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Yunjoo\Documents\projects\boost_1_59_0\stage\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\stipplerd.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.lib" /MACHINE:X86 /SAFESEH /DLL Debug\stippler.obj
+  Debug\bitmap.obj
+  Debug\stippler_api.obj
+  Debug\VoronoiDiagramGenerator.obj
+  C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\picopng.lib
+stippler.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+     C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.lib 라이브러리 및 C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.exp 개체를 생성하고 있습니다.
+  stippler.vcxproj -> C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.dll
+Manifest:
+  C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\Debug\stipplerd.dll.manifest" /manifest Debug\stipplerd.dll.intermediate.manifest
+"C:\Users\Yunjoo\Documents\projects\stippling\voronoi\stippler\stippler.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:06.60

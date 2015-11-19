@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Summary of the two methods}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{hedcuter method}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{voronoi method}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Comparison of the two methods}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Do you get the same results by running the same program on the same image multiple times?}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{If you vary the number of the disks in the output images, is a method faster the other?}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Does the size \(number of pixels\), image brightness or contrast of image increase or decrease their difference?}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Does the type of image \(human vs. machine, natural vs. urban landscapes, photo vs.painting, etc\) increase or decrease their difference?}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Are the outputs of these stippling methods different the hedcut images created by artists \(e.g. those from the Wall Street Journal\)?}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Improvement of hedcuter method}{}% 11
