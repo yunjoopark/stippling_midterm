@@ -42,7 +42,8 @@ public:
 	float max_site_displacement; //max tolerable site displacement in each iteration. 
 
 	bool debug; //if true, debug information will be excuted
-
+	clock_t start, finish;
+	double elapsed_time;
 private:
 
 	void sample_initial_points(cv::Mat & img, int n, std::vector<cv::Point2d> & pts);

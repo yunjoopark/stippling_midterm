@@ -48,9 +48,9 @@ void CVT::vor(cv::Mat &  img)
 	{
 		//
 		std::pop_heap(open.begin(), open.end(), compareCell);
-		auto cell = open.back();
+		auto cell = open.back();	//	returns reference to last sequence element
 		auto& cpos = cell.second;
-		open.pop_back();
+		open.pop_back();			//	removes the last element from the sequence
 
 		//check if the distance from this cell is already updated
 		if (cell.first > dist.at<float>(cpos.x, cpos.y)) continue;
@@ -71,6 +71,7 @@ void CVT::vor(cv::Mat &  img)
 				float newd = dist.at<float>(cpos.x, cpos.y) + color2dist(img, cv::Point(x, y));
 				float oldd = dist.at<float>(x, y);
 
+				// add a neighbor which has short distance than the cell
 				if (newd < oldd)
 				{
 					dist.at<float>(x, y)=newd;
@@ -127,6 +128,7 @@ void CVT::vor(cv::Mat &  img)
 
 void CVT::compute_weighted_cvt(cv::Mat &  img, std::vector<cv::Point2d> & sites)
 {
+	//clock_t finish;
 	//inint 
 	int site_size = sites.size();
 	this->cells.resize(site_size);
@@ -145,6 +147,8 @@ void CVT::compute_weighted_cvt(cv::Mat &  img, std::vector<cv::Point2d> & sites)
 		if (debug) std::cout << "[" << iteration << "] max dist moved = " << max_dist_moved << std::endl;
 		iteration++;
 	} while (max_dist_moved>max_site_displacement && iteration < this->iteration_limit);
-
-	if (debug) cv::waitKey();
+	//finish = clock();
+	//if (debug) cv::waitKey();
+	
+	//return finish;
 }

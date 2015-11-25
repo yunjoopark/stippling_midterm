@@ -20,6 +20,7 @@ Hedcut::Hedcut()
 
 bool Hedcut::build(cv::Mat & input_image, int n)
 {
+	start = clock();
 	//sample n points
 	std::vector<cv::Point2d> pts;
 	sample_initial_points(input_image, n, pts);
@@ -31,11 +32,13 @@ bool Hedcut::build(cv::Mat & input_image, int n)
 	cvt.debug = this->debug;
 
 	//compute weighted centroidal voronoi tessellation
+	//finish = cvt.compute_weighted_cvt(input_image, pts);
 	cvt.compute_weighted_cvt(input_image, pts);
 
 	//create disks
 	create_disks(input_image, cvt);
-
+	finish = clock();
+	elapsed_time = (finish - start) / (double)CLOCKS_PER_SEC;
 	return true;
 }
 
@@ -74,7 +77,7 @@ void Hedcut::sample_initial_points(cv::Mat & img, int n, std::vector<cv::Point2d
 			cv::circle(tmp, cv::Point(c.y, c.x), 2, CV_RGB(0, 0, 255), -1);
 		}
 		cv::imshow("samples", tmp);
-		cv::waitKey();
+		//cv::waitKey();
 	}
 }
 

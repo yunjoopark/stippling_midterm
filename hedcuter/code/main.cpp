@@ -71,7 +71,7 @@ int main(int argc, char ** argv)
 	//
 	if (hedcut.build(image, sample_size) == false)
 		cerr << "! Error: Failed to build hedcut. Sorry." << endl;
-
+	
 	if (debug)
 	{
 		cout << "- Generated " << hedcut.getDisks().size() << " disks" << endl;
@@ -82,7 +82,7 @@ int main(int argc, char ** argv)
 	//
 	stringstream ss;
 	string img_name = getImageName(img_filename);
-	ss << img_name << "-" << sample_size << ".svg";
+	ss << img_name << "-" << sample_size << "-h.svg";
 	svg::Dimensions dimensions(image.size().width, image.size().height);
 	svg::Document doc(ss.str(), svg::Layout(dimensions, svg::Layout::TopLeft));
 
@@ -98,11 +98,13 @@ int main(int argc, char ** argv)
 
 	doc.save();
 
+	
 	if (debug)
 	{
+		std::cout << "Completed in " << hedcut.elapsed_time << " seconds." << std::endl;
 		cout << "- Saved " << ss.str() << endl;
 	}
-
+	if (debug) cv::waitKey();
 	return 0;
 }
 
