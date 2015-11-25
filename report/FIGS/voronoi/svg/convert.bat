@@ -1,3 +1,3 @@
-inkscape -D -z --file=phoenix-5000-v1.svg --export-pdf=phoenix-5000-v1.pdf --export-latex
-inkscape -D -z --file=phoenix-5000-v2.svg --export-pdf=phoenix-5000-v2.pdf --export-latex
-inkscape -D -z --file=phoenix-5000-v3.svg --export-pdf=phoenix-5000-v3.pdf --export-latex
+
+inkscape -D -z --file=klaymen-20000-v.svg --export-pdf=klaymen-20000-v.pdf --export-latex
+inkscape -D -z --file=klaymen-100000-v.svg --export-pdf=klaymen-100000-v.pdf --export-latex

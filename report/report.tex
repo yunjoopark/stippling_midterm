@@ -18,7 +18,8 @@
 \usepackage{xcolor}
 \usepackage{subfig}
 \usepackage{multirow}
-\usepackage{xcolor}
+\usepackage{color}
+\usepackage{float}
 \usepackage[backref, colorlinks=true, citecolor=red, urlcolor=blue, pdfauthor={Jyh-Ming Lien}]{hyperref}
 
 
@@ -231,7 +232,7 @@ The program consists of the following several steps.
 In the first step, creates initial stipples. The second step is the main part. Firstly, in the \textit{createVoronoiDiagram()} part, generates a voronoi diagram using stipples. Second, in the \textit{redistributeStipples()} part, calcuates the centroid of a cell using edges of the cell. To be specific, in the process of calcuating the centroid, creates and computes clip lines. Each clip line is extension of each edge. Thus, the clip lines form a polygon. Tests whether each point around the stipple is outside of the polygon or not. gets the density from image for inside points, calculates the density of the cell, and returns the center and radius of the cell. Updates stipples of voronoi diagram with the centroid. After updating, calculates the average displacement of stipples, denoted by $t$. Repeat this second step while $t$ is greater than the \textit{threshold}.
 
 \section{Comparison of the two methods}
-\subsection{Do you get the same results by running the same program on the same image multiple times?}
+\subsection{Do you get the same results by running the same program on the same image multiple times?}%2.1
 \begin{enumerate}
 	\item Hedcuter
 	\begin{figure}[htbp]
@@ -254,28 +255,62 @@ In the first step, creates initial stipples. The second step is the main part. F
 \end{enumerate}
 While I got the different outputs by running the hedcuter program on the same image multiple times, I obtained the same outputs by running the voronoi program. The hedcuter program generates sample initial points randomly and make a CVT under limit iteration and given max site displacement. Since the initial sample points set are different, the results of propagation are also changed. On the other hand, the voronoi program has the same initial points and repeats the series of process until the average of displacement of points is small enough. Thus, we could get the same output multiple times with the voronoi program.
 
-\subsection{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}
-
-\begin{enumerate}
-	\item Hedcuter
-	\begin{figure}[htbp]
- 	 \centering
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-3000-h}
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h1}
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-10000-h}
- 	 \caption{phoenix with \{3000, 5000, 10000\}}
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[2981 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/klaymen-3000-h}}
+	\subfloat[4943 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/klaymen-5000-h}}
+	\subfloat[9829 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/klaymen-10000-h}}
+	\subfloat[55070 disks nonblack]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/klaymen-100000-h-nonblack}}
+	\caption{Hedcuter klaymen}
+	\label{fig:varydiskhedcut} 
+	\end{center} 
 	\end{figure}
-	\item Voronoi
-	\begin{figure}[htbp]
- 	 \centering
 
- 	 \caption{phoenix with 5000}
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[1000 stipples]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/klaymen-1000-v}}
+	\subfloat[5000 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/klaymen-5000-v}}
+	\subfloat[20000 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/klaymen-20000-v}}
+	\subfloat[100000 disks]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/klaymen-100000-v}}
+	\caption{Voronoi klaymen} 
+	\label{fig:varydiskvoronoi}
+	\end{center} 
 	\end{figure}
-\end{enumerate}
+
+
+\subsection{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}%2.2
+Both methods produce the different distribution in the final image when the the number of the disks in the output images varies. As the number of the disks increases, they generate the more detailed results. See the figure \ref{fig:varydiskhedcut}, \ref{fig:varydiskvoronoi}
+
 The hedcuter produces the different distribution the number of the disks in the output image, 
 
 
-\subsection{If you vary the number of the disks in the output images, is a method faster the other?}
+\subsection{If you vary the number of the disks in the output images, is a method faster than the other?}%2.3
+I could not assure that one method is faster than the other. In the hedcuter method, there are some points which oscillate after a few iteration in some cases. Thus, if there is no iteration limit, it will take infinite time because some points will oscillate infinitely. In the voronoi method, the more I increase the number of points, it takes the small number of iteration. Figure \ref{fig:varydiskrunningtimevoronoi} shows elapsed time of the voronoi as the number of stipples is varied. As the number of points increases, the method becomes faster. However, the elapsed time increases again when the number of points goes beyond a certain level. This is because it takes too much time for each iteration even though there are few iteration.
+
+\begin{figure}[hbpt] 
+	\begin{center} 
+	\subfloat[1000 stipples]{
+		\includegraphics[width=0.45\textwidth]{FIGS/voronoi/running_time/klaymen-1000-v}}
+	\subfloat[5000 disks]{
+		\includegraphics[width=0.45\textwidth]{FIGS/voronoi/running_time/klaymen-5000-v}}
+
+	\subfloat[10000 disks]{
+		\includegraphics[width=0.45\textwidth]{FIGS/voronoi/running_time/klaymen-100000-v}}
+	\subfloat[100000 disks]{
+		\includegraphics[width=0.45\textwidth]{FIGS/voronoi/running_time/klaymen-100000-v}}
+	\caption{Elapsed time of Voronoi as a function of the number of stipples} 
+	\label{fig:varydiskrunningtimevoronoi}
+	\end{center} 
+\end{figure}
+
 \subsection{Does the size (number of pixels), image brightness or contrast of image increase or decrease their difference?}
 \subsection{Does the type of image (human vs. machine, natural vs. urban landscapes, photo vs.painting, etc) increase or decrease their difference?}
 \subsection{Are the outputs of these stippling methods different the hedcut images created by artists (e.g. those from the Wall Street Journal)?}
