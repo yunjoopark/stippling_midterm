@@ -97,6 +97,7 @@ void Stippler::getStipples( StipplePoint *dst ) {
 void Stippler::createVoronoiDiagram() {
 	VoronoiDiagramGenerator generator;
 
+	// YJ generateVoronoi(float *xValues, float *yValues, int numPoints, float minX, float maxX, float minY, float maxY, float minDist)
 	generator.generateVoronoi( vertsX, vertsY, parameters.points, 
 		0.0f, (float)(image.getWidth() - 1), 0.0f, (float)(image.getHeight() - 1) );
 
@@ -105,10 +106,11 @@ void Stippler::createVoronoiDiagram() {
 	Point< float > p1, p2;
 	Edge< float > edge;
 
-	generator.resetIterator();
+	//	YJ map edges' endpoints to points and add edges to 'edges'
+	generator.resetIterator();	//	YJ assign iteratorEdges = allEdges
 	while ( generator.getNext( 
 		edge.begin.x, edge.begin.y, edge.end.x, edge.end.y,
-		p1.x, p1.y, p2.x, p2.y ) ) {
+		p1.x, p1.y, p2.x, p2.y ) ) {	
 
 		if ( edge.begin == edge.end ) {
 			continue;
@@ -141,8 +143,8 @@ void Stippler::redistributeStipples() {
 
 	#pragma omp parallel for reduction(+:local_displacement)
 	for (int i = 0; i < (int)vectorized.size(); i++) {
-		pair< Point< float >, EdgeList > item = vectorized[i];
-		pair< Point<float>, float > centroid = calculateCellCentroid( item.first, item.second );
+		pair< Point< float >, EdgeList > item = vectorized[i];	//	YJ EdgeList includes edges of the cell. 
+		pair< Point<float>, float > centroid = calculateCellCentroid( item.first, item.second );	//	YJ calculate the centroid of the cell using edges. 
 
 		radii[i] = centroid.second;
 		vertsX[i] = centroid.first.x;

@@ -132,7 +132,7 @@ In the program, build process undergoes several steps.
 \end{description}
 The method use 256 as the number required in a pure black image. We call the number $N$.
 \\ \\
-First of all, hedcuter generates sample initial $n$ points. To be specific, $n$ is initialized by \textit{user}, or default value is 1000. For generating random points, it uses RNG (Random Number Generator). The random points are generated and distributed uniformly. The hedcuter calculates their value based on each color. If the point is close to black, the value is close to 0. On the contrary, if the point is close to white, the value is close to 1. This value is used to determines which points are appropriate. The points are decided whether to keep or not by comparing the value with a random number sampled from the gaussian distribution. 
+First of all, hedcuter generates sample initial $n$ points. To be specific, $n$ is initialized by \textit{user}, or default value is 1000. For generating random points, it uses RNG (Random Number Generator). The random points are generated and distributed uniformly. The hedcuter calculates their value based on each color. If the point is close to black, the value is close to 0. On the contrary, if the point is close to white, the value is close to 1. This value is used to determines which points are appropriate. The points are decided whether to keep or not by comparing the value with a random number sampled from the gaussian distribution. Thus, the black has higher probability.
 \\ \\
 Second part is main of the hedcuter. At first, the hedcuter copies all points to \textit{site of cells} and calculate \textit{distance} for cells. The distance of each cell is obtained by converting its color intensity to distance value [0, 1] by equation (\ref{eq:colortodist}). Let $indensity(c)$ be the color intensity and $distance(c)$ be the distance of the stipple.
 
@@ -186,7 +186,7 @@ Param. & Arg. & default & Description\\
 \caption{Voronoi method's options}
 \label{voronoimethodoptions}
 \end{table}
-\\ \\
+\\
 As I mentioned before, in CVT, each generating point lies exactly on the centroid of its voronoi region. The centroid of a region is defined as 
 \begin{equation}
 C_i = \frac{\int_{A} x\rho(x), dA}{\int_{A} \rho(x), dA}
@@ -213,22 +213,22 @@ This program uses Lloyd's algorithm\cite{weighted-voronoi-stippling} to generate
 \end{figure}
 \\
 The algorithm find evenly spaced sets of points in subsets of Euclidean spaces, and partitions of these subsets into well-shaped and uniformly sized convex cells. That is, Under the algorithm, a voronoi diagram become a centroidal voronoi diagram through relaxation step.
-\\ \\
+\clearpage
 The program consists of the following several steps.
 \begin{description}
-  \item[First] Create stipples
+  \item[First] Create stippler
   \item[Second] Loop while (average displacement $>$ threshold)
 	\begin{enumerate}
 	  \item distribute stipples
 		\begin{enumerate}
-	     \item create voronoi diagram
+	     \item create voronoi diagram	
 	     \item redistribute stipples
 		\end{enumerate}
 	\end{enumerate}
   \item[Third] Render
 \end{description}
 
-The second step is the main part of the program. The voronoi program sorts the given points set to generate(or update during the loop) voronoi. And then, the program calculate the centroid for cells using \textit{calculateCellCentroid()}. The function computes clip lines that is extension of each edge, for all voronoi edges. The clip lines form ploygons. The function tests whether a point is outside of the corresponding polygon or not. If the point is inside the polygon, it gets density from image. The function returns the point of center and radius. In the step of redistribution, the point moves to the center and the average of the displacement, denoted by $t$, is computed. Repeat the processes until $t$ is greater than the $threshold$. 
+In the first step, creates initial stipples. The second step is the main part. Firstly, in the \textit{createVoronoiDiagram()} part, generates a voronoi diagram using stipples. Second, in the \textit{redistributeStipples()} part, calcuates the centroid of a cell using edges of the cell. To be specific, in the process of calcuating the centroid, creates and computes clip lines. Each clip line is extension of each edge. Thus, the clip lines form a polygon. Tests whether each point around the stipple is outside of the polygon or not. gets the density from image for inside points, calculates the density of the cell, and returns the center and radius of the cell. Updates stipples of voronoi diagram with the centroid. After updating, calculates the average displacement of stipples, denoted by $t$. Repeat this second step while $t$ is greater than the \textit{threshold}.
 
 \section{Comparison of the two methods}
 \subsection{Do you get the same results by running the same program on the same image multiple times?}
@@ -246,13 +246,13 @@ The second step is the main part of the program. The voronoi program sorts the g
 	\item Voronoi
 	\begin{figure}[htbp]
  	 \centering
- 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v1}
- 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v2}
- 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-v3}
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-5000-v1}
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-5000-v2}
+ 	 \includegraphics[width=.23\textwidth]{FIGS/voronoi/svg/phoenix-5000-v3}
  	 \caption{phoenix with 5000}
 	\end{figure}
 \end{enumerate}
-While I got the different outputs by running the hedcuter program on the same image multiple times, I obtained the same outputs by running the voronoi program. The hedcuter program generates sample initial points randomly and make a CVT under limit iteration and given max site displacement. Since the initial sample points set are different, the results of propagation are also changed. On the other hand, the voronoi program repeat the series of process until the average of displacement of points is small enough. Thus, we could get the same output multiple times.
+While I got the different outputs by running the hedcuter program on the same image multiple times, I obtained the same outputs by running the voronoi program. The hedcuter program generates sample initial points randomly and make a CVT under limit iteration and given max site displacement. Since the initial sample points set are different, the results of propagation are also changed. On the other hand, the voronoi program has the same initial points and repeats the series of process until the average of displacement of points is small enough. Thus, we could get the same output multiple times with the voronoi program.
 
 \subsection{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}
 

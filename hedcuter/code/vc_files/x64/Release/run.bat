@@ -1,0 +1,1 @@
+hedcut.exe -debug -black -n 5000 -iteration 100 -radius 5 fairyeyes.png

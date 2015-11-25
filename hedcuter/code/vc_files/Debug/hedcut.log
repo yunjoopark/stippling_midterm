@@ -1,0 +1,80 @@
+﻿빌드 시작: 2015-11-25 오후 9:32:03
+     1>2 노드의 "C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\hedcut.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Yunjoo\Documents\projects\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\hedcut.cpp ..\main.cpp ..\wcvt.cpp ..\wcvt_gpu.cpp
+         wcvt_gpu.cpp
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\wcvt.h(98): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         wcvt.cpp
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\wcvt.h(98): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         main.cpp
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\wcvt.h(98): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\simple_svg_1.0.0.hpp(468): warning C4520: 'svg::Polygon' : 기본 생성자를 여러 개 지정했습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\simple_svg_1.0.0.hpp(505): warning C4520: 'svg::Polyline' : 기본 생성자를 여러 개 지정했습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\main.cpp(44): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\main.cpp(46): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\main.cpp(91): warning C4244: '초기화 중' : 'const double'에서 'uchar'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\main.cpp(92): warning C4244: '초기화 중' : 'const double'에서 'uchar'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\main.cpp(93): warning C4244: '초기화 중' : 'const double'에서 'uchar'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         hedcut.cpp
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\wcvt.h(98): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\hedcut.cpp(62): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\hedcut.cpp(63): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\yunjoo\documents\projects\stippling\hedcuter\code\hedcut.cpp(77): warning C4244: '인수' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\Debug\hedcut.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Yunjoo\Documents\projects\opencv\build\x64\vc10\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\Debug\hedcut.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\Debug\hedcut.lib" /MACHINE:X86 Debug\hedcut.obj
+         Debug\main.obj
+         Debug\wcvt.obj
+         Debug\wcvt_gpu.obj
+     1>hedcut.obj : error LNK2019: "public: __thiscall cv::Exception::Exception(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (??0Exception@cv@@QAE@HABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00H@Z) 외부 기호(참조 위치: "public: unsigned char & __thiscall cv::Mat::at<unsigned char>(int,int)" (??$at@E@Mat@cv@@QAEAAEHH@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "public: __thiscall cv::Exception::Exception(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (??0Exception@cv@@QAE@HABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00H@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "public: __thiscall cv::Exception::Exception(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (??0Exception@cv@@QAE@HABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00H@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt_gpu.obj : error LNK2001: "public: __thiscall cv::Exception::Exception(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (??0Exception@cv@@QAE@HABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00H@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: virtual __thiscall cv::Exception::~Exception(void)" (??1Exception@cv@@UAE@XZ) 외부 기호(참조 위치: "public: unsigned char & __thiscall cv::Mat::at<unsigned char>(int,int)" (??$at@E@Mat@cv@@QAEAAEHH@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "public: virtual __thiscall cv::Exception::~Exception(void)" (??1Exception@cv@@UAE@XZ) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "public: virtual __thiscall cv::Exception::~Exception(void)" (??1Exception@cv@@UAE@XZ) 외부 기호를 확인할 수 없습니다.
+     1>wcvt_gpu.obj : error LNK2001: "public: virtual __thiscall cv::Exception::~Exception(void)" (??1Exception@cv@@UAE@XZ) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "void __cdecl cv::error(class cv::Exception const &)" (?error@cv@@YAXABVException@1@@Z) 외부 기호(참조 위치: "public: unsigned char & __thiscall cv::Mat::at<unsigned char>(int,int)" (??$at@E@Mat@cv@@QAEAAEHH@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "void __cdecl cv::error(class cv::Exception const &)" (?error@cv@@YAXABVException@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "void __cdecl cv::error(class cv::Exception const &)" (?error@cv@@YAXABVException@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt_gpu.obj : error LNK2001: "void __cdecl cv::error(class cv::Exception const &)" (?error@cv@@YAXABVException@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z) 외부 기호(참조 위치: "public: __thiscall cv::Mat::~Mat(void)" (??1Mat@cv@@QAE@XZ) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z) 외부 기호(참조 위치: "private: void __thiscall Hedcut::sample_initial_points(class cv::Mat &,int,class std::vector<class cv::Point_<double>,class std::allocator<class cv::Point_<double> > > &)" (?sample_initial_points@Hedcut@@AAEXAAVMat@cv@@HAAV?$vector@V?$Point_@N@cv@@V?$allocator@V?$Point_@N@cv@@@std@@@std@@@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: __thiscall cv::_OutputArray::_OutputArray(class cv::Mat &)" (??0_OutputArray@cv@@QAE@AAVMat@1@@Z) 외부 기호(참조 위치: "public: class cv::Mat __thiscall cv::Mat::clone(void)const " (?clone@Mat@cv@@QBE?AV12@XZ) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2001: "public: __thiscall cv::_OutputArray::_OutputArray(class cv::Mat &)" (??0_OutputArray@cv@@QAE@AAVMat@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: void __thiscall cv::Mat::copyTo(class cv::_OutputArray const &)const " (?copyTo@Mat@cv@@QBEXABV_OutputArray@2@@Z) 외부 기호(참조 위치: "public: class cv::Mat __thiscall cv::Mat::clone(void)const " (?clone@Mat@cv@@QBE?AV12@XZ) 함수)에서 확인하지 못했습니다.
+     1>hedcut.obj : error LNK2019: "public: class cv::Mat & __thiscall cv::Mat::operator=(class cv::Scalar_<double> const &)" (??4Mat@cv@@QAEAAV01@ABV?$Scalar_@N@1@@Z) 외부 기호(참조 위치: "public: __thiscall cv::Mat::Mat(class cv::Size_<int>,int,class cv::Scalar_<double> const &)" (??0Mat@cv@@QAE@V?$Size_@H@1@HABV?$Scalar_@N@1@@Z) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2001: "public: class cv::Mat & __thiscall cv::Mat::operator=(class cv::Scalar_<double> const &)" (??4Mat@cv@@QAEAAV01@ABV?$Scalar_@N@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: void __thiscall cv::Mat::create(int,int const *,int)" (?create@Mat@cv@@QAEXHPBHH@Z) 외부 기호(참조 위치: "public: void __thiscall cv::Mat::create(int,int,int)" (?create@Mat@cv@@QAEXHHH@Z) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2001: "public: void __thiscall cv::Mat::create(int,int const *,int)" (?create@Mat@cv@@QAEXHPBHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ) 외부 기호(참조 위치: "public: void __thiscall cv::Mat::release(void)" (?release@Mat@cv@@QAEXXZ) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "public: void __thiscall cv::Mat::copySize(class cv::Mat const &)" (?copySize@Mat@cv@@QAEXABV12@@Z) 외부 기호(참조 위치: "public: __thiscall cv::Mat::Mat(class cv::Mat const &)" (??0Mat@cv@@QAE@ABV01@@Z) 함수)에서 확인하지 못했습니다.
+     1>hedcut.obj : error LNK2019: "public: double __thiscall cv::RNG::gaussian(double)" (?gaussian@RNG@cv@@QAENN@Z) 외부 기호(참조 위치: "private: void __thiscall Hedcut::sample_initial_points(class cv::Mat &,int,class std::vector<class cv::Point_<double>,class std::allocator<class cv::Point_<double> > > &)" (?sample_initial_points@Hedcut@@AAEXAAVMat@cv@@HAAV?$vector@V?$Point_@N@cv@@V?$allocator@V?$Point_@N@cv@@@std@@@std@@@Z) 함수)에서 확인하지 못했습니다.
+     1>hedcut.obj : error LNK2019: "void __cdecl cv::circle(class cv::Mat &,class cv::Point_<int>,int,class cv::Scalar_<double> const &,int,int,int)" (?circle@cv@@YAXAAVMat@1@V?$Point_@H@1@HABV?$Scalar_@N@1@HHH@Z) 외부 기호(참조 위치: "private: void __thiscall Hedcut::sample_initial_points(class cv::Mat &,int,class std::vector<class cv::Point_<double>,class std::allocator<class cv::Point_<double> > > &)" (?sample_initial_points@Hedcut@@AAEXAAVMat@cv@@HAAV?$vector@V?$Point_@N@cv@@V?$allocator@V?$Point_@N@cv@@@std@@@std@@@Z) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2001: "void __cdecl cv::circle(class cv::Mat &,class cv::Point_<int>,int,class cv::Scalar_<double> const &,int,int,int)" (?circle@cv@@YAXAAVMat@1@V?$Point_@H@1@HABV?$Scalar_@N@1@HHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z) 외부 기호(참조 위치: "public: __thiscall cv::Mat::Mat(class cv::Mat const &)" (??0Mat@cv@@QAE@ABV01@@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>hedcut.obj : error LNK2019: "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z) 외부 기호(참조 위치: "private: void __thiscall Hedcut::sample_initial_points(class cv::Mat &,int,class std::vector<class cv::Point_<double>,class std::allocator<class cv::Point_<double> > > &)" (?sample_initial_points@Hedcut@@AAEXAAVMat@cv@@HAAV?$vector@V?$Point_@N@cv@@V?$allocator@V?$Point_@N@cv@@@std@@@std@@@Z) 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2001: "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt.obj : error LNK2001: "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z) 외부 기호를 확인할 수 없습니다.
+     1>main.obj : error LNK2019: "void __cdecl cv::namedWindow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?namedWindow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>main.obj : error LNK2019: "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2001: "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>wcvt_gpu.obj : error LNK2001: "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) 외부 기호를 확인할 수 없습니다.
+     1>main.obj : error LNK2019: "class cv::Mat __cdecl cv::imread(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?imread@cv@@YA?AVMat@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2019: "class cv::_OutputArray const & __cdecl cv::noArray(void)" (?noArray@cv@@YAABV_OutputArray@1@XZ) 외부 기호(참조 위치: "private: void __thiscall CVT::vor(class cv::Mat &)" (?vor@CVT@@AAEXAAVMat@cv@@@Z) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2019: "void __cdecl cv::convertScaleAbs(class cv::_InputArray const &,class cv::_OutputArray const &,double,double)" (?convertScaleAbs@cv@@YAXABV_InputArray@1@ABV_OutputArray@1@NN@Z) 외부 기호(참조 위치: "private: void __thiscall CVT::vor(class cv::Mat &)" (?vor@CVT@@AAEXAAVMat@cv@@@Z) 함수)에서 확인하지 못했습니다.
+     1>wcvt.obj : error LNK2019: "void __cdecl cv::minMaxIdx(class cv::_InputArray const &,double *,double *,int *,int *,class cv::_InputArray const &)" (?minMaxIdx@cv@@YAXABV_InputArray@1@PAN1PAH20@Z) 외부 기호(참조 위치: "private: void __thiscall CVT::vor(class cv::Mat &)" (?vor@CVT@@AAEXAAVMat@cv@@@Z) 함수)에서 확인하지 못했습니다.
+     1>C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\Debug\hedcut.exe : fatal error LNK1120: 21개의 확인할 수 없는 외부 참조입니다.
+     1>"C:\Users\Yunjoo\Documents\projects\stippling\hedcuter\code\vc_files\hedcut.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:06.24

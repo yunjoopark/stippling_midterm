@@ -171,7 +171,8 @@ int main( int argc, char *argv[] ) {
 		log.open( "log.txt" );
 	}
 
-	stippler = create_stippler( parameters.get() );
+	stippler = create_stippler( parameters.get() );	//	YJ create initial distribution
+	
 	if (stippler == NULL) {
 		delete[] parameters.get()->inputFile;
 		cerr << stippler_getLastError() << endl;
@@ -191,7 +192,7 @@ int main( int argc, char *argv[] ) {
 	do {
 		iteration_profiler.restart();
 
-		stippler_distribute(stippler);
+		stippler_distribute(stippler);			//	call distribute func.
 
 		t = stippler_getAverageDisplacement( stippler );
 
