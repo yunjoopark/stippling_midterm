@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.6)  26 NOV 2015 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.6)  26 NOV 2015 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,12 +792,12 @@ Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-100000-v.png used on
 
  [6 <./FIGS/voronoi/running_time/klaymen-1000-v.png> <./FIGS/voronoi/running_ti
 me/klaymen-5000-v.png> <./FIGS/voronoi/running_time/klaymen-100000-v.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 913C7E136EB0A84D024B3C7EED7FB381;1322.
 Package rerunfilecheck Info: File `report.brf' has not changed.
@@ -806,7 +806,7 @@ Package rerunfilecheck Info: File `report.brf' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
  9866 strings out of 493054
