@@ -15,6 +15,7 @@ I was expecting a `,' or a `}'---line 37 of file report.bib
  :  url  = "http://www.saliences.com/projects/npr/stippling/index.html"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "weighted-voronoi-stipples"
 Too many commas in name 1 of "Mark de Berg, Marc van Kreveld, Mark Overmars, Otfried Cheong Schwarzkopf" for entry computational-geometry-book
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Mark de Berg, Marc van Kreveld, Mark Overmars, Otfried Cheong Schwarzkopf" for entry computational-geometry-book
@@ -22,7 +23,7 @@ while executing---line 1090 of file plain.bst
 Warning--empty year in weighted-voronoi-stippling
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            508 strings with 4374 characters,
+            509 strings with 4399 characters,
 and the built_in function-call counts, 665 in all, are:
 = -- 54
 > -- 21

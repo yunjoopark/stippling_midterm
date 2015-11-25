@@ -134,18 +134,25 @@ The method use 256 as the number required in a pure black image. We call the num
 \\ \\
 First of all, hedcuter generates sample initial $n$ points. To be specific, $n$ is initialized by \textit{user}, or default value is 1000. For generating random points, it uses RNG (Random Number Generator). The random points are generated and distributed uniformly. The hedcuter calculates their value based on each color. If the point is close to black, the value is close to 0. On the contrary, if the point is close to white, the value is close to 1. This value is used to determines which points are appropriate. The points are decided whether to keep or not by comparing the value with a random number sampled from the gaussian distribution. 
 \\ \\
-Second part is main of the hedcuter. At first, the hedcuter copy all points to \textit{stipples} and calculate \textit{distance} for stipples. The distance of each stipple is obtained by converting its color intensity to distance value [0, 1] by equation (\ref{eq:colortodist}). Let $Indensity(s)$ be the color intensity and $distance(s)$ be the distance of the stipple.
+Second part is main of the hedcuter. At first, the hedcuter copies all points to \textit{site of cells} and calculate \textit{distance} for cells. The distance of each cell is obtained by converting its color intensity to distance value [0, 1] by equation (\ref{eq:colortodist}). Let $indensity(c)$ be the color intensity and $distance(c)$ be the distance of the stipple.
+
 \begin{equation}
-distance(s) = \frac{\left(N-Intensity\left(s\right)\right)*1.0f}{N}
+distance(c) = \frac{\left(N-intensity\left(c\right)\right)*1.0f}{N}
 \label{eq:colortodist}
 \end{equation}
-And then, sort stipples using heap. The next step is about propagation. For each sorted stipple, the hedcuter calculate new distance of its neighbors. $distance_{new}(neighbor) = distance(s) + distance(neighbor)$. If the updated distance is less than old distance of the neighbor, push the neighbor to heap as stipple with the new distance. Finally, after the propagation step, the hedcuter collects cells that is affected by given points. For these cell, the hedcuter compute weighted average distance of cell and move the cell to the new position using the distance. Repeat these process while satisfying the following conditions.
+
+And then, sort cells using heap. The next step is about propagation. For each cell, the hedcuter calculate new distance of its neighbors. Neighbors are the points which are 3X3 matrix around the stipple.
+
+\begin{equation}
+distance_{new}(neighbor) = distance(c) + distance(neighbor)
+\label{eq:distance}
+\end{equation}
+
+If the calculated distance is less than the distance of the neighbor, push the neighbor to heap with the new distance. Finally, after the propagation step, the hedcuter collects cells by pushing points to ceverage of corresponding cell and removes empty cells. For the collected cells, the hedcuter computes weighted average distance of each cell and updates the site of the cell to the new position using the distance. Repeat these process while satisfying the following conditions.
 \begin{itemize}
   \item the max of the displacement of site at each iteration  $<$ max\_site\_displacement (1.01f)
   \item the number of iterations $<$ iteration\_limit (option: -iteration)
 \end{itemize}
-
-
 
 \subsection{voronoi method}
 This method is also one way to generate stipple drawings from input image. This uses weighted centroidal voronoi diagram. Input file must be a PNG image. The program could have options below. Specifically, input and output are required\cite{saliences}.
@@ -229,9 +236,9 @@ The second step is the main part of the program. The voronoi program sorts the g
 	\item Hedcuter
 	\begin{figure}[htbp]
 	  \centering
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h1}
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h2}
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-h3}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h2}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h3}
 	  \caption{phoenix with 5000}
 	  \label{fig:hedcuterphoenix}
 	\end{figure}
@@ -253,9 +260,9 @@ While I got the different outputs by running the hedcuter program on the same im
 	\item Hedcuter
 	\begin{figure}[htbp]
  	 \centering
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-3000-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-3000-h}
 	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-5000-h1}
-	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-10000-h1}
+	  \includegraphics[width=.23\textwidth]{FIGS/hedcut/svg/phoenix-10000-h}
  	 \caption{phoenix with \{3000, 5000, 10000\}}
 	\end{figure}
 	\item Voronoi
