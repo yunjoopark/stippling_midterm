@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.6)  26 NOV 2015 01:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.6)  26 NOV 2015 02:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,69 +663,69 @@ pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/phoenix-5000-v2.pdf): PDF
 
 pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/phoenix-5000-v3.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <FIGS/hedcut/svg/klaymen-3000-h.pdf, id=113, 461.23412pt x 727.08871pt>
+>] <FIGS/hedcut/svg/klaymen-3000-h.pdf, id=115, 461.23412pt x 727.08871pt>
 File: FIGS/hedcut/svg/klaymen-3000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-3000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-3000-h.pdf used on input line 
-261.
-(pdftex.def)             Requested size: 108.04163pt x 170.31114pt.
+264.
+(pdftex.def)             Requested size: 84.55244pt x 133.28891pt.
 
-<FIGS/hedcut/svg/klaymen-5000-h.pdf, id=114, 464.45033pt x 728.11887pt>
+<FIGS/hedcut/svg/klaymen-5000-h.pdf, id=116, 464.45033pt x 728.11887pt>
 File: FIGS/hedcut/svg/klaymen-5000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-5000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-5000-h.pdf used on input line 
-263.
-(pdftex.def)             Requested size: 108.04163pt x 169.37476pt.
+267.
+(pdftex.def)             Requested size: 84.55244pt x 132.5445pt.
 
-<FIGS/hedcut/svg/klaymen-10000-h.pdf, id=115, 465.25911pt x 729.76822pt>
+<FIGS/hedcut/svg/klaymen-10000-h.pdf, id=117, 465.25911pt x 729.76822pt>
 File: FIGS/hedcut/svg/klaymen-10000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-10000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-10000-h.pdf used on input line
- 265.
-(pdftex.def)             Requested size: 108.04163pt x 169.45778pt.
+ 270.
+(pdftex.def)             Requested size: 84.55244pt x 132.62204pt.
 
-<FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf, id=116, 483.66173pt x 775.15071
+<FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf, id=118, 483.66173pt x 775.15071
 pt>
 File: FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf Graphic file (type pdf)
  <use FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf used on 
-input line 267.
-(pdftex.def)             Requested size: 108.04163pt x 173.14763pt.
+input line 273.
+(pdftex.def)             Requested size: 84.55244pt x 135.49963pt.
 
-<FIGS/voronoi/svg/klaymen-1000-v.pdf, id=117, 455.81514pt x 720.4445pt>
+<FIGS/voronoi/svg/klaymen-1000-v.pdf, id=119, 455.81514pt x 720.4445pt>
 File: FIGS/voronoi/svg/klaymen-1000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-1000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-1000-v.pdf used on input line
- 276.
-(pdftex.def)             Requested size: 108.04163pt x 170.76656pt.
+ 281.
+(pdftex.def)             Requested size: 84.55244pt x 133.63193pt.
 
-<FIGS/voronoi/svg/klaymen-5000-v.pdf, id=118, 466.57597pt x 750.40489pt>
+<FIGS/voronoi/svg/klaymen-5000-v.pdf, id=120, 466.57597pt x 750.40489pt>
 File: FIGS/voronoi/svg/klaymen-5000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-5000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-5000-v.pdf used on input line
- 278.
-(pdftex.def)             Requested size: 108.04163pt x 173.75742pt.
+ 284.
+(pdftex.def)             Requested size: 84.55244pt x 135.98306pt.
 
-<FIGS/voronoi/svg/klaymen-20000-v.pdf, id=119, 476.43002pt x 769.14948pt>
+<FIGS/voronoi/svg/klaymen-20000-v.pdf, id=121, 476.43002pt x 769.14948pt>
 File: FIGS/voronoi/svg/klaymen-20000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-20000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-20000-v.pdf used on input lin
-e 280.
-(pdftex.def)             Requested size: 108.04163pt x 174.4243pt.
+e 287.
+(pdftex.def)             Requested size: 84.55244pt x 136.4927pt.
 
-<FIGS/voronoi/svg/klaymen-100000-v.pdf, id=120, 478.9757pt x 769.51411pt>
+<FIGS/voronoi/svg/klaymen-100000-v.pdf, id=122, 478.9757pt x 769.51411pt>
 File: FIGS/voronoi/svg/klaymen-100000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-100000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-100000-v.pdf used on input li
-ne 282.
-(pdftex.def)             Requested size: 108.04163pt x 173.57939pt.
+ne 290.
+(pdftex.def)             Requested size: 84.55244pt x 135.84117pt.
  [5 <./FIGS/hedcut/svg/klaymen-3000-h.pdf> <./FIGS/hedcut/svg/klaymen-5000-h.pd
 f
 
@@ -756,48 +756,89 @@ pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/klaymen-20000-v.pdf): PDF
 pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/klaymen-100000-v.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-<FIGS/voronoi/running_time/klaymen-1000-v.png, id=148, 509.65407pt x 295.1025pt
+<FIGS/voronoi/running_time/klaymen-1000-v.png, id=149, 509.65407pt x 295.1025pt
 >
 File: FIGS/voronoi/running_time/klaymen-1000-v.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-1000-v.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-1000-v.png used on i
-nput line 301.
-(pdftex.def)             Requested size: 211.3883pt x 122.3977pt.
+nput line 303.
+(pdftex.def)             Requested size: 187.89912pt x 108.79895pt.
 
-<FIGS/voronoi/running_time/klaymen-5000-v.png, id=150, 509.65407pt x 295.1025pt
+<FIGS/voronoi/running_time/klaymen-5000-v.png, id=151, 509.65407pt x 295.1025pt
 >
 File: FIGS/voronoi/running_time/klaymen-5000-v.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-5000-v.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-5000-v.png used on i
-nput line 303.
-(pdftex.def)             Requested size: 211.3883pt x 122.3977pt.
+nput line 306.
+(pdftex.def)             Requested size: 187.89912pt x 108.79895pt.
 
-<FIGS/voronoi/running_time/klaymen-100000-v.png, id=151, 509.65407pt x 295.1025
+<FIGS/voronoi/running_time/klaymen-20000-v2.png, id=152, 510.40688pt x 128.7309
+4pt>
+File: FIGS/voronoi/running_time/klaymen-20000-v2.png Graphic file (type png)
+ <use FIGS/voronoi/running_time/klaymen-20000-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-20000-v2.png used on
+ input line 309.
+(pdftex.def)             Requested size: 187.89912pt x 47.39005pt.
+
+<FIGS/voronoi/running_time/klaymen-100000-v2.png, id=153, 510.40688pt x 126.472
+5pt>
+File: FIGS/voronoi/running_time/klaymen-100000-v2.png Graphic file (type png)
+ <use FIGS/voronoi/running_time/klaymen-100000-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-100000-v2.png used o
+n input line 312.
+(pdftex.def)             Requested size: 187.89912pt x 46.55864pt.
+
+<FIGS/voronoi/running_time/einstein-100-v2.png, id=154, 511.15968pt x 213.79875
 pt>
-File: FIGS/voronoi/running_time/klaymen-100000-v.png Graphic file (type png)
- <use FIGS/voronoi/running_time/klaymen-100000-v.png>
-Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-100000-v.png used on
- input line 306.
-(pdftex.def)             Requested size: 211.3883pt x 122.3977pt.
-File: FIGS/voronoi/running_time/klaymen-100000-v.png Graphic file (type png)
+File: FIGS/voronoi/running_time/einstein-100-v2.png Graphic file (type png)
+ <use FIGS/voronoi/running_time/einstein-100-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/einstein-100-v2.png used on 
+input line 321.
+(pdftex.def)             Requested size: 187.89912pt x 78.58885pt.
 
-<use FIGS/voronoi/running_time/klaymen-100000-v.png>
-Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-100000-v.png used on
- input line 308.
-(pdftex.def)             Requested size: 211.3883pt x 122.3977pt.
+<FIGS/voronoi/running_time/einstein-5000-v2.png, id=155, 511.9125pt x 211.54031
+pt>
+File: FIGS/voronoi/running_time/einstein-5000-v2.png Graphic file (type png)
+ <use FIGS/voronoi/running_time/einstein-5000-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/einstein-5000-v2.png used on
+ input line 324.
+(pdftex.def)             Requested size: 187.89912pt x 77.6457pt.
+
+<FIGS/voronoi/running_time/einstein-250000-v2.png, id=156, 509.65407pt x 96.36p
+t>
+File: FIGS/voronoi/running_time/einstein-250000-v2.png Graphic file (type png)
+ <use FIGS/voronoi/running_time/einstein-250000-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/einstein-250000-v2.png used 
+on input line 327.
+(pdftex.def)             Requested size: 187.89912pt x 35.52618pt.
+
+<FIGS/voronoi/running_time/einstein-10000000-v2.png, id=157, 511.15968pt x 88.0
+7906pt>
+File: FIGS/voronoi/running_time/einstein-10000000-v2.png Graphic file (type png
+)
+ <use FIGS/voronoi/running_time/einstein-10000000-v2.png>
+Package pdftex.def Info: FIGS/voronoi/running_time/einstein-10000000-v2.png use
+d on input line 330.
+(pdftex.def)             Requested size: 187.89912pt x 32.37637pt.
  (./report.bbl
 (./report.brf)
 \tf@brf=\write5
 \openout5 = `report.brf'.
 
- [6 <./FIGS/voronoi/running_time/klaymen-1000-v.png> <./FIGS/voronoi/running_ti
-me/klaymen-5000-v.png> <./FIGS/voronoi/running_time/klaymen-100000-v.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+ [6
+
+ <./FIGS/voronoi/running_time/klaymen-1000-v.png> <./FIGS/voronoi/running_time/
+klaymen-5000-v.png> <./FIGS/voronoi/running_time/klaymen-20000-v2.png> <./FIGS/
+voronoi/running_time/klaymen-100000-v2.png> <./FIGS/voronoi/running_time/einste
+in-100-v2.png> <./FIGS/voronoi/running_time/einstein-5000-v2.png> <./FIGS/voron
+oi/running_time/einstein-250000-v2.png> <./FIGS/voronoi/running_time/einstein-1
+0000000-v2.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 347.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 913C7E136EB0A84D024B3C7EED7FB381;1322.
 Package rerunfilecheck Info: File `report.brf' has not changed.
@@ -806,13 +847,13 @@ Package rerunfilecheck Info: File `report.brf' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 347.
  ) 
 Here is how much of TeX's memory you used:
- 9866 strings out of 493054
- 148155 string characters out of 6138327
- 249943 words of memory out of 5000000
- 13155 multiletter control sequences out of 15000+600000
+ 9898 strings out of 493054
+ 149416 string characters out of 6138327
+ 250060 words of memory out of 5000000
+ 13176 multiletter control sequences out of 15000+600000
  10769 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,98p,910b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -826,10 +867,10 @@ s/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (7 pages, 15894794 bytes).
+Output written on report.pdf (7 pages, 15922965 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
