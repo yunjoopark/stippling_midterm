@@ -104,7 +104,6 @@ int main(int argc, char ** argv)
 		std::cout << "Completed in " << hedcut.elapsed_time << " seconds." << std::endl;
 		cout << "- Saved " << ss.str() << endl;
 	}
-	if (debug) cv::waitKey();
 	return 0;
 }
 
