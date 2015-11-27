@@ -1,0 +1,2 @@
+inkscape	-D	-z	--file=emma-thompson-face-15000-h.svg	--export-pdf=emma-thompson-face-15000-h.pdf	--export-latex
+inkscape	-D	-z	--file=emma-thompson-face-15000-v.svg	--export-pdf=emma-thompson-face-15000-v.pdf	--export-latex

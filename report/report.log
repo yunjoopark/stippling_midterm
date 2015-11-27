@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.6)  26 NOV 2015 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.26)  27 NOV 2015 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,7 +228,7 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 Package: makebox 2004/07/31 v0.1 extend makebox command
 )
 (c:/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (c:/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
@@ -458,25 +458,28 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Hy@SectionHShift=\skip66
 )
 \c@theorem=\count136
- (./report.aux)
+ (./report.aux
+
+LaTeX Warning: Label `fig:poohgrayscalebhedcut' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-
-(c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+ (c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count137
 \scratchdimen=\dimen141
@@ -509,7 +512,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 68.
+Package hyperref Info: Link coloring ON on input line 69.
 
 (c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -519,40 +522,40 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 73.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 74.
 
 (c:/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
 
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 
 (c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: Citation `weighted-voronoi-stipples' on page 1 undefined on inpu
-t line 74.
+t line 75.
 
 
-Overfull \hbox (14.82378pt too wide) in paragraph at lines 79--99
+Overfull \hbox (14.82378pt too wide) in paragraph at lines 80--100
  [][] 
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 110.
+put line 111.
 [1
 
 {c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (e
@@ -561,84 +564,84 @@ ready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 \clearpage
+l.124 \clearpage
                 ]
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 154.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 155.
 
 (c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
  [2
 
 ]
 
 LaTeX Warning: Citation `weighted-voronoi-stipples' on page 3 undefined on inpu
-t line 196.
+t line 197.
 
 [3pdfTeX warning (ext4): destination with the same identifier (name{figure.capt
 ion.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 \clearpage
+l.218 \clearpage
                 ]
-<FIGS/hedcut/svg/phoenix-5000-h1.pdf, id=89, 536.56747pt x 343.78505pt>
+<FIGS/hedcut/svg/phoenix-5000-h1.pdf, id=97, 536.56747pt x 343.78505pt>
 File: FIGS/hedcut/svg/phoenix-5000-h1.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/phoenix-5000-h1.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/phoenix-5000-h1.pdf used on input line
- 240.
+ 241.
 (pdftex.def)             Requested size: 108.04163pt x 69.22266pt.
 
-<FIGS/hedcut/svg/phoenix-5000-h2.pdf, id=90, 535.9984pt x 344.04227pt>
+<FIGS/hedcut/svg/phoenix-5000-h2.pdf, id=98, 535.9984pt x 344.04227pt>
 File: FIGS/hedcut/svg/phoenix-5000-h2.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/phoenix-5000-h2.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/phoenix-5000-h2.pdf used on input line
- 241.
+ 242.
 (pdftex.def)             Requested size: 108.04163pt x 69.34795pt.
 
-<FIGS/hedcut/svg/phoenix-5000-h3.pdf, id=91, 538.95218pt x 346.20541pt>
+<FIGS/hedcut/svg/phoenix-5000-h3.pdf, id=99, 538.95218pt x 346.20541pt>
 File: FIGS/hedcut/svg/phoenix-5000-h3.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/phoenix-5000-h3.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/phoenix-5000-h3.pdf used on input line
- 242.
+ 243.
 (pdftex.def)             Requested size: 108.04163pt x 69.39833pt.
 
-<FIGS/voronoi/svg/phoenix-5000-v1.pdf, id=92, 533.7554pt x 344.47792pt>
+<FIGS/voronoi/svg/phoenix-5000-v1.pdf, id=100, 533.7554pt x 344.47792pt>
 File: FIGS/voronoi/svg/phoenix-5000-v1.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/phoenix-5000-v1.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/phoenix-5000-v1.pdf used on input lin
-e 250.
+e 251.
 (pdftex.def)             Requested size: 108.04163pt x 69.72485pt.
 
-<FIGS/voronoi/svg/phoenix-5000-v2.pdf, id=93, 533.7554pt x 344.47792pt>
+<FIGS/voronoi/svg/phoenix-5000-v2.pdf, id=101, 533.7554pt x 344.47792pt>
 File: FIGS/voronoi/svg/phoenix-5000-v2.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/phoenix-5000-v2.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/phoenix-5000-v2.pdf used on input lin
-e 251.
+e 252.
 (pdftex.def)             Requested size: 108.04163pt x 69.72485pt.
 
-<FIGS/voronoi/svg/phoenix-5000-v3.pdf, id=94, 533.7554pt x 344.47792pt>
+<FIGS/voronoi/svg/phoenix-5000-v3.pdf, id=102, 533.7554pt x 344.47792pt>
 File: FIGS/voronoi/svg/phoenix-5000-v3.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/phoenix-5000-v3.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/phoenix-5000-v3.pdf used on input lin
-e 252.
+e 253.
 (pdftex.def)             Requested size: 108.04163pt x 69.72485pt.
  [4
 
@@ -663,68 +666,68 @@ pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/phoenix-5000-v2.pdf): PDF
 
 pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/phoenix-5000-v3.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <FIGS/hedcut/svg/klaymen-3000-h.pdf, id=115, 461.23412pt x 727.08871pt>
+>] <FIGS/hedcut/svg/klaymen-3000-h.pdf, id=123, 461.23412pt x 727.08871pt>
 File: FIGS/hedcut/svg/klaymen-3000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-3000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-3000-h.pdf used on input line 
-264.
+265.
 (pdftex.def)             Requested size: 84.55244pt x 133.28891pt.
 
-<FIGS/hedcut/svg/klaymen-5000-h.pdf, id=116, 464.45033pt x 728.11887pt>
+<FIGS/hedcut/svg/klaymen-5000-h.pdf, id=124, 464.45033pt x 728.11887pt>
 File: FIGS/hedcut/svg/klaymen-5000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-5000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-5000-h.pdf used on input line 
-267.
+268.
 (pdftex.def)             Requested size: 84.55244pt x 132.5445pt.
 
-<FIGS/hedcut/svg/klaymen-10000-h.pdf, id=117, 465.25911pt x 729.76822pt>
+<FIGS/hedcut/svg/klaymen-10000-h.pdf, id=125, 465.25911pt x 729.76822pt>
 File: FIGS/hedcut/svg/klaymen-10000-h.pdf Graphic file (type pdf)
 
 <use FIGS/hedcut/svg/klaymen-10000-h.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-10000-h.pdf used on input line
- 270.
+ 271.
 (pdftex.def)             Requested size: 84.55244pt x 132.62204pt.
 
-<FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf, id=118, 483.66173pt x 775.15071
+<FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf, id=126, 483.66173pt x 775.15071
 pt>
 File: FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf Graphic file (type pdf)
  <use FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf>
 Package pdftex.def Info: FIGS/hedcut/svg/klaymen-100000-h-nonblack.pdf used on 
-input line 273.
+input line 274.
 (pdftex.def)             Requested size: 84.55244pt x 135.49963pt.
 
-<FIGS/voronoi/svg/klaymen-1000-v.pdf, id=119, 455.81514pt x 720.4445pt>
+<FIGS/voronoi/svg/klaymen-1000-v.pdf, id=127, 455.81514pt x 720.4445pt>
 File: FIGS/voronoi/svg/klaymen-1000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-1000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-1000-v.pdf used on input line
- 281.
+ 282.
 (pdftex.def)             Requested size: 84.55244pt x 133.63193pt.
 
-<FIGS/voronoi/svg/klaymen-5000-v.pdf, id=120, 466.57597pt x 750.40489pt>
+<FIGS/voronoi/svg/klaymen-5000-v.pdf, id=128, 466.57597pt x 750.40489pt>
 File: FIGS/voronoi/svg/klaymen-5000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-5000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-5000-v.pdf used on input line
- 284.
+ 285.
 (pdftex.def)             Requested size: 84.55244pt x 135.98306pt.
 
-<FIGS/voronoi/svg/klaymen-20000-v.pdf, id=121, 476.43002pt x 769.14948pt>
+<FIGS/voronoi/svg/klaymen-20000-v.pdf, id=129, 476.43002pt x 769.14948pt>
 File: FIGS/voronoi/svg/klaymen-20000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-20000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-20000-v.pdf used on input lin
-e 287.
+e 288.
 (pdftex.def)             Requested size: 84.55244pt x 136.4927pt.
 
-<FIGS/voronoi/svg/klaymen-100000-v.pdf, id=122, 478.9757pt x 769.51411pt>
+<FIGS/voronoi/svg/klaymen-100000-v.pdf, id=130, 478.9757pt x 769.51411pt>
 File: FIGS/voronoi/svg/klaymen-100000-v.pdf Graphic file (type pdf)
 
 <use FIGS/voronoi/svg/klaymen-100000-v.pdf>
 Package pdftex.def Info: FIGS/voronoi/svg/klaymen-100000-v.pdf used on input li
-ne 290.
+ne 291.
 (pdftex.def)             Requested size: 84.55244pt x 135.84117pt.
  [5 <./FIGS/hedcut/svg/klaymen-3000-h.pdf> <./FIGS/hedcut/svg/klaymen-5000-h.pd
 f
@@ -756,75 +759,70 @@ pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/klaymen-20000-v.pdf): PDF
 pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/klaymen-100000-v.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-<FIGS/voronoi/running_time/klaymen-1000-v.png, id=149, 509.65407pt x 295.1025pt
+<FIGS/voronoi/running_time/klaymen-1000-v.png, id=157, 509.65407pt x 295.1025pt
 >
 File: FIGS/voronoi/running_time/klaymen-1000-v.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-1000-v.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-1000-v.png used on i
-nput line 303.
+nput line 304.
 (pdftex.def)             Requested size: 187.89912pt x 108.79895pt.
 
-<FIGS/voronoi/running_time/klaymen-5000-v.png, id=151, 509.65407pt x 295.1025pt
+<FIGS/voronoi/running_time/klaymen-5000-v.png, id=159, 509.65407pt x 295.1025pt
 >
 File: FIGS/voronoi/running_time/klaymen-5000-v.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-5000-v.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-5000-v.png used on i
-nput line 306.
+nput line 307.
 (pdftex.def)             Requested size: 187.89912pt x 108.79895pt.
 
-<FIGS/voronoi/running_time/klaymen-20000-v2.png, id=152, 510.40688pt x 128.7309
+<FIGS/voronoi/running_time/klaymen-20000-v2.png, id=160, 510.40688pt x 128.7309
 4pt>
 File: FIGS/voronoi/running_time/klaymen-20000-v2.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-20000-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-20000-v2.png used on
- input line 309.
+ input line 310.
 (pdftex.def)             Requested size: 187.89912pt x 47.39005pt.
 
-<FIGS/voronoi/running_time/klaymen-100000-v2.png, id=153, 510.40688pt x 126.472
+<FIGS/voronoi/running_time/klaymen-100000-v2.png, id=161, 510.40688pt x 126.472
 5pt>
 File: FIGS/voronoi/running_time/klaymen-100000-v2.png Graphic file (type png)
  <use FIGS/voronoi/running_time/klaymen-100000-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/klaymen-100000-v2.png used o
-n input line 312.
+n input line 313.
 (pdftex.def)             Requested size: 187.89912pt x 46.55864pt.
 
-<FIGS/voronoi/running_time/einstein-100-v2.png, id=154, 511.15968pt x 213.79875
+<FIGS/voronoi/running_time/einstein-100-v2.png, id=162, 511.15968pt x 213.79875
 pt>
 File: FIGS/voronoi/running_time/einstein-100-v2.png Graphic file (type png)
  <use FIGS/voronoi/running_time/einstein-100-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/einstein-100-v2.png used on 
-input line 321.
+input line 322.
 (pdftex.def)             Requested size: 187.89912pt x 78.58885pt.
 
-<FIGS/voronoi/running_time/einstein-5000-v2.png, id=155, 511.9125pt x 211.54031
+<FIGS/voronoi/running_time/einstein-5000-v2.png, id=163, 511.9125pt x 211.54031
 pt>
 File: FIGS/voronoi/running_time/einstein-5000-v2.png Graphic file (type png)
  <use FIGS/voronoi/running_time/einstein-5000-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/einstein-5000-v2.png used on
- input line 324.
+ input line 325.
 (pdftex.def)             Requested size: 187.89912pt x 77.6457pt.
 
-<FIGS/voronoi/running_time/einstein-250000-v2.png, id=156, 509.65407pt x 96.36p
+<FIGS/voronoi/running_time/einstein-250000-v2.png, id=164, 509.65407pt x 96.36p
 t>
 File: FIGS/voronoi/running_time/einstein-250000-v2.png Graphic file (type png)
  <use FIGS/voronoi/running_time/einstein-250000-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/einstein-250000-v2.png used 
-on input line 327.
+on input line 328.
 (pdftex.def)             Requested size: 187.89912pt x 35.52618pt.
 
-<FIGS/voronoi/running_time/einstein-10000000-v2.png, id=157, 511.15968pt x 88.0
+<FIGS/voronoi/running_time/einstein-10000000-v2.png, id=165, 511.15968pt x 88.0
 7906pt>
 File: FIGS/voronoi/running_time/einstein-10000000-v2.png Graphic file (type png
 )
  <use FIGS/voronoi/running_time/einstein-10000000-v2.png>
 Package pdftex.def Info: FIGS/voronoi/running_time/einstein-10000000-v2.png use
-d on input line 330.
+d on input line 331.
 (pdftex.def)             Requested size: 187.89912pt x 32.37637pt.
- (./report.bbl
-(./report.brf)
-\tf@brf=\write5
-\openout5 = `report.brf'.
-
  [6
 
  <./FIGS/voronoi/running_time/klaymen-1000-v.png> <./FIGS/voronoi/running_time/
@@ -832,31 +830,542 @@ klaymen-5000-v.png> <./FIGS/voronoi/running_time/klaymen-20000-v2.png> <./FIGS/
 voronoi/running_time/klaymen-100000-v2.png> <./FIGS/voronoi/running_time/einste
 in-100-v2.png> <./FIGS/voronoi/running_time/einstein-5000-v2.png> <./FIGS/voron
 oi/running_time/einstein-250000-v2.png> <./FIGS/voronoi/running_time/einstein-1
-0000000-v2.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 347.
+0000000-v2.png>]
+<FIGS/hedcut/svg/einstein-medium-100-h-nonblack.pdf, id=191, 431.51588pt x 471.
+93956pt>
+File: FIGS/hedcut/svg/einstein-medium-100-h-nonblack.pdf Graphic file (type pdf
+)
+ <use FIGS/hedcut/svg/einstein-medium-100-h-nonblack.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-medium-100-h-nonblack.pdf use
+d on input line 344.
+(pdftex.def)             Requested size: 70.46037pt x 77.06012pt.
+
+<FIGS/hedcut/svg/einstein-medium-100-h-radius10.pdf, id=192, 436.99216pt x 476.
+808pt>
+File: FIGS/hedcut/svg/einstein-medium-100-h-radius10.pdf Graphic file (type pdf
+)
+ <use FIGS/hedcut/svg/einstein-medium-100-h-radius10.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-medium-100-h-radius10.pdf use
+d on input line 347.
+(pdftex.def)             Requested size: 70.46037pt x 76.88014pt.
+
+<FIGS/hedcut/svg/einstein-medium-100-h-radius30.pdf, id=193, 463.07294pt x 492.
+35052pt>
+File: FIGS/hedcut/svg/einstein-medium-100-h-radius30.pdf Graphic file (type pdf
+)
+ <use FIGS/hedcut/svg/einstein-medium-100-h-radius30.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-medium-100-h-radius30.pdf use
+d on input line 350.
+(pdftex.def)             Requested size: 70.46037pt x 74.90868pt.
+
+<FIGS/voronoi/svg/einstein-medium-100-v-c.pdf, id=194, 463.25348pt x 487.44131p
+t>
+File: FIGS/voronoi/svg/einstein-medium-100-v-c.pdf Graphic file (type pdf)
+ <use FIGS/voronoi/svg/einstein-medium-100-v-c.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-medium-100-v-c.pdf used on i
+nput line 359.
+(pdftex.def)             Requested size: 70.46037pt x 74.13945pt.
+
+<FIGS/voronoi/svg/einstein-medium-100-v-f.pdf, id=195, 422.50323pt x 456.3478pt
+>
+File: FIGS/voronoi/svg/einstein-medium-100-v-f.pdf Graphic file (type pdf)
+ <use FIGS/voronoi/svg/einstein-medium-100-v-f.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-medium-100-v-f.pdf used on i
+nput line 362.
+(pdftex.def)             Requested size: 70.46037pt x 76.10187pt.
+
+<FIGS/hedcut/svg/einstein-medium-5000-h-nonblack.pdf, id=198, 456.19212pt x 485
+.89302pt>
+File: FIGS/hedcut/svg/einstein-medium-5000-h-nonblack.pdf Graphic file (type pd
+f)
+ <use FIGS/hedcut/svg/einstein-medium-5000-h-nonblack.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-medium-5000-h-nonblack.pdf us
+ed on input line 377.
+(pdftex.def)             Requested size: 108.04163pt x 115.07457pt.
+
+<FIGS/voronoi/svg/einstein-medium-5000-v-c.pdf, id=199, 453.62366pt x 483.17354
+pt>
+File: FIGS/voronoi/svg/einstein-medium-5000-v-c.pdf Graphic file (type pdf)
+ <use FIGS/voronoi/svg/einstein-medium-5000-v-c.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-medium-5000-v-c.pdf used on 
+input line 377.
+(pdftex.def)             Requested size: 108.04163pt x 115.0793pt.
+
+<FIGS/hedcut/svg/einstein-5000-h-nonblack.pdf, id=200, 945.71733pt x 1010.3452p
+t>
+File: FIGS/hedcut/svg/einstein-5000-h-nonblack.pdf Graphic file (type pdf)
+ <use FIGS/hedcut/svg/einstein-5000-h-nonblack.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-5000-h-nonblack.pdf used on i
+nput line 385.
+(pdftex.def)             Requested size: 108.04163pt x 115.42413pt.
+
+<FIGS/voronoi/svg/einstein-5000-v-c.pdf, id=201, 950.0014pt x 1014.06516pt>
+File: FIGS/voronoi/svg/einstein-5000-v-c.pdf Graphic file (type pdf)
+
+<use FIGS/voronoi/svg/einstein-5000-v-c.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-5000-v-c.pdf used on input l
+ine 385.
+(pdftex.def)             Requested size: 108.04163pt x 115.32301pt.
+ [7 <./FIGS/hedcut/svg/einstein-medium-100-h-nonblack.pdf> <./FIGS/hedcut/svg/e
+instein-medium-100-h-radius10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/hedcut/svg/einstein-medium-100-h-radi
+us10.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./FIGS/hedcut/svg/einstein-medium-100-h-radius30.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/hedcut/svg/einstein-medium-100-h-radi
+us30.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./FIGS/voronoi/svg/einstein-medium-100-v-c.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-medium-100-v-c.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/voronoi/svg/einstein-medium-100-v-f.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-medium-100-v-f.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/hedcut/svg/einstein-medium-5000-h-nonblack.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/hedcut/svg/einstein-medium-5000-h-non
+black.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./FIGS/voronoi/svg/einstein-medium-5000-v-c.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-medium-5000-v-c.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/hedcut/svg/einstein-5000-h-nonblack.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/hedcut/svg/einstein-5000-h-nonblack.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/voronoi/svg/einstein-5000-v-c.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-5000-v-c.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+<FIGS/hedcut/svg/einstein-medium-250000-h-nonblack.pdf, id=231, 451.32222pt x 4
+83.41296pt>
+File: FIGS/hedcut/svg/einstein-medium-250000-h-nonblack.pdf Graphic file (type 
+pdf)
+ <use FIGS/hedcut/svg/einstein-medium-250000-h-nonblack.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-medium-250000-h-nonblack.pdf 
+used on input line 400.
+(pdftex.def)             Requested size: 108.04163pt x 115.71904pt.
+
+<FIGS/voronoi/svg/einstein-medium-250000-v-c.pdf, id=232, 452.04068pt x 481.877
+35pt>
+File: FIGS/voronoi/svg/einstein-medium-250000-v-c.pdf Graphic file (type pdf)
+ <use FIGS/voronoi/svg/einstein-medium-250000-v-c.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-medium-250000-v-c.pdf used o
+n input line 400.
+(pdftex.def)             Requested size: 108.04163pt x 115.16763pt.
+
+<FIGS/hedcut/svg/einstein-250000-h-nonblack.pdf, id=233, 944.3781pt x 1010.0117
+3pt>
+File: FIGS/hedcut/svg/einstein-250000-h-nonblack.pdf Graphic file (type pdf)
+ <use FIGS/hedcut/svg/einstein-250000-h-nonblack.pdf>
+Package pdftex.def Info: FIGS/hedcut/svg/einstein-250000-h-nonblack.pdf used on
+ input line 408.
+(pdftex.def)             Requested size: 108.04163pt x 115.54015pt.
+
+<FIGS/voronoi/svg/einstein-250000-v-c.pdf, id=234, 948.1764pt x 1010.79843pt>
+File: FIGS/voronoi/svg/einstein-250000-v-c.pdf Graphic file (type pdf)
+
+<use FIGS/voronoi/svg/einstein-250000-v-c.pdf>
+Package pdftex.def Info: FIGS/voronoi/svg/einstein-250000-v-c.pdf used on input
+ line 408.
+(pdftex.def)             Requested size: 108.04163pt x 115.16743pt.
+
+<FIGS/pooh_grayscale/b1-h.pdf, id=237, 362.00598pt x 667.14595pt>
+File: FIGS/pooh_grayscale/b1-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b1-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b1-h.pdf used on input line 415.
+(pdftex.def)             Requested size: 61.07043pt x 112.53784pt.
+
+<FIGS/pooh_grayscale/b2-h.pdf, id=238, 364.70215pt x 669.11792pt>
+File: FIGS/pooh_grayscale/b2-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b2-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b2-h.pdf used on input line 417.
+(pdftex.def)             Requested size: 61.07043pt x 112.04349pt.
+
+<FIGS/pooh_grayscale/b3-h.pdf, id=239, 361.24269pt x 669.57826pt>
+File: FIGS/pooh_grayscale/b3-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b3-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b3-h.pdf used on input line 419.
+(pdftex.def)             Requested size: 61.07043pt x 113.19334pt.
+
+<FIGS/pooh_grayscale/b4-h.pdf, id=240, 363.55977pt x 667.36748pt>
+File: FIGS/pooh_grayscale/b4-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b4-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b4-h.pdf used on input line 421.
+(pdftex.def)             Requested size: 61.07043pt x 112.0966pt.
+
+<FIGS/pooh_grayscale/b1-v.pdf, id=241, 301.20314pt x 505.18475pt>
+File: FIGS/pooh_grayscale/b1-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b1-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b1-v.pdf used on input line 427.
+(pdftex.def)             Requested size: 61.07043pt x 102.42268pt.
+
+<FIGS/pooh_grayscale/b2-v.pdf, id=242, 360.28603pt x 665.73308pt>
+File: FIGS/pooh_grayscale/b2-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b2-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b2-v.pdf used on input line 429.
+(pdftex.def)             Requested size: 61.07043pt x 112.83789pt.
+
+<FIGS/pooh_grayscale/b3-v.pdf, id=243, 362.60411pt x 667.99403pt>
+File: FIGS/pooh_grayscale/b3-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b3-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b3-v.pdf used on input line 431.
+(pdftex.def)             Requested size: 61.07043pt x 112.49744pt.
+
+<FIGS/pooh_grayscale/b4-v.pdf, id=244, 363.54028pt x 667.47537pt>
+File: FIGS/pooh_grayscale/b4-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/b4-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/b4-v.pdf used on input line 433.
+(pdftex.def)             Requested size: 61.07043pt x 112.12491pt.
+
+<FIGS/pooh_grayscale/c1-h.pdf, id=247, 363.98659pt x 668.5837pt>
+File: FIGS/pooh_grayscale/c1-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c1-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c1-h.pdf used on input line 441.
+(pdftex.def)             Requested size: 93.94955pt x 172.56264pt.
+
+<FIGS/pooh_grayscale/c2-h.pdf, id=248, 364.89317pt x 669.42944pt>
+File: FIGS/pooh_grayscale/c2-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c2-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c2-h.pdf used on input line 443.
+(pdftex.def)             Requested size: 93.94955pt x 172.35191pt.
+
+<FIGS/pooh_grayscale/c3-h.pdf, id=249, 359.85022pt x 667.34752pt>
+File: FIGS/pooh_grayscale/c3-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c3-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c3-h.pdf used on input line 445.
+(pdftex.def)             Requested size: 93.94955pt x 174.22925pt.
+
+<FIGS/pooh_grayscale/c4-h.pdf, id=250, 358.2936pt x 665.92955pt>
+File: FIGS/pooh_grayscale/c4-h.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c4-h.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c4-h.pdf used on input line 447.
+(pdftex.def)             Requested size: 93.94955pt x 174.61098pt.
+
+<FIGS/pooh_grayscale/c1-v.pdf, id=251, 360.74257pt x 663.9441pt>
+File: FIGS/pooh_grayscale/c1-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c1-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c1-v.pdf used on input line 453.
+(pdftex.def)             Requested size: 93.94955pt x 172.91519pt.
+
+<FIGS/pooh_grayscale/c2-v.pdf, id=252, 360.9557pt x 666.45876pt>
+File: FIGS/pooh_grayscale/c2-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c2-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c2-v.pdf used on input line 455.
+(pdftex.def)             Requested size: 93.94955pt x 173.45824pt.
+
+<FIGS/pooh_grayscale/c3-v.pdf, id=253, 361.66606pt x 666.00221pt>
+File: FIGS/pooh_grayscale/c3-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c3-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c3-v.pdf used on input line 457.
+(pdftex.def)             Requested size: 93.94955pt x 173.00404pt.
+
+<FIGS/pooh_grayscale/c4-v.pdf, id=254, 361.36552pt x 666.8011pt>
+File: FIGS/pooh_grayscale/c4-v.pdf Graphic file (type pdf)
+
+<use FIGS/pooh_grayscale/c4-v.pdf>
+Package pdftex.def Info: FIGS/pooh_grayscale/c4-v.pdf used on input line 459.
+(pdftex.def)             Requested size: 93.94955pt x 173.35402pt.
+ [8
+
+ <./FIGS/hedcut/svg/einstein-medium-250000-h-nonblack.pdf> <./FIGS/voronoi/svg/
+einstein-medium-250000-v-c.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-medium-250000-v-
+c.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/hedcut/svg/einstein-250000-h-nonblack.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/hedcut/svg/einstein-250000-h-nonblack
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/voronoi/svg/einstein-250000-v-c.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/voronoi/svg/einstein-250000-v-c.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b1-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b1-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b2-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b2-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b3-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b3-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b4-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b4-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b1-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b1-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b2-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b2-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b3-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b3-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/b4-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/b4-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] <FIGS/type/urban-10000-h.pdf, id=279, 633.3861pt x 476.7264pt>
+File: FIGS/type/urban-10000-h.pdf Graphic file (type pdf)
+
+<use FIGS/type/urban-10000-h.pdf>
+Package pdftex.def Info: FIGS/type/urban-10000-h.pdf used on input line 468.
+(pdftex.def)             Requested size: 187.89912pt x 141.42596pt.
+
+<FIGS/type/urban-v.pdf, id=280, 633.3861pt x 476.7264pt>
+File: FIGS/type/urban-v.pdf Graphic file (type pdf)
+
+<use FIGS/type/urban-v.pdf>
+Package pdftex.def Info: FIGS/type/urban-v.pdf used on input line 471.
+(pdftex.def)             Requested size: 187.89912pt x 141.42596pt.
+
+<FIGS/type/countryside-10000-h.pdf, id=281, 634.58038pt x 476.824pt>
+File: FIGS/type/countryside-10000-h.pdf Graphic file (type pdf)
+
+<use FIGS/type/countryside-10000-h.pdf>
+Package pdftex.def Info: FIGS/type/countryside-10000-h.pdf used on input line 4
+79.
+(pdftex.def)             Requested size: 187.89912pt x 141.18571pt.
+
+<FIGS/type/countryside-v.pdf, id=282, 632.33101pt x 474.13297pt>
+File: FIGS/type/countryside-v.pdf Graphic file (type pdf)
+
+<use FIGS/type/countryside-v.pdf>
+Package pdftex.def Info: FIGS/type/countryside-v.pdf used on input line 482.
+(pdftex.def)             Requested size: 187.89912pt x 140.88809pt.
+ [9 <./FIGS/pooh_grayscale/c1-h.pdf> <./FIGS/pooh_grayscale/c2-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c2-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c3-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c3-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c4-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c4-h.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c1-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c1-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c2-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c2-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c3-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c3-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./FIGS/pooh_grayscale/c4-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/pooh_grayscale/c4-v.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] [10 <./FIGS/type/urban-10000-h.pdf> <./FIGS/type/urban-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/urban-v.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./FIGS/type/countryside-10000-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/countryside-10000-h.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./FIGS/type/countryside-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/countryside-v.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 489.
+
+<FIGS/type/person-10000-h.pdf, id=314, 392.51997pt x 707.02872pt>
+File: FIGS/type/person-10000-h.pdf Graphic file (type pdf)
+
+<use FIGS/type/person-10000-h.pdf>
+Package pdftex.def Info: FIGS/type/person-10000-h.pdf used on input line 492.
+(pdftex.def)             Requested size: 108.04163pt x 194.6115pt.
+
+<FIGS/type/person-v.pdf, id=315, 384.45923pt x 707.47614pt>
+File: FIGS/type/person-v.pdf Graphic file (type pdf)
+
+<use FIGS/type/person-v.pdf>
+Package pdftex.def Info: FIGS/type/person-v.pdf used on input line 495.
+(pdftex.def)             Requested size: 108.04163pt x 198.81525pt.
+
+<FIGS/type/bb8-10000-h.pdf, id=316, 508.15196pt x 699.19942pt>
+File: FIGS/type/bb8-10000-h.pdf Graphic file (type pdf)
+
+<use FIGS/type/bb8-10000-h.pdf>
+Package pdftex.def Info: FIGS/type/bb8-10000-h.pdf used on input line 503.
+(pdftex.def)             Requested size: 108.04163pt x 148.66058pt.
+
+<FIGS/type/bb8-v.pdf, id=317, 445.02736pt x 693.25613pt>
+File: FIGS/type/bb8-v.pdf Graphic file (type pdf)
+
+<use FIGS/type/bb8-v.pdf>
+Package pdftex.def Info: FIGS/type/bb8-v.pdf used on input line 506.
+(pdftex.def)             Requested size: 108.04163pt x 168.29953pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./FIGS/type/person-10000-h.pdf> <./FIGS/type/person-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/person-v.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./FIGS/type/bb8-10000-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/bb8-10000-h.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./FIGS/type/bb8-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/type/bb8-v.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] <FIGS/wsj/emma-thompson-face.png, id=334, 137.01187pt x 180.675pt>
+File: FIGS/wsj/emma-thompson-face.png Graphic file (type png)
+
+<use FIGS/wsj/emma-thompson-face.png>
+Package pdftex.def Info: FIGS/wsj/emma-thompson-face.png used on input line 518
+.
+(pdftex.def)             Requested size: 93.94955pt x 123.89119pt.
+
+<FIGS/wsj/emma-thompson-face-15000-h.pdf, id=335, 146.29755pt x 193.50726pt>
+File: FIGS/wsj/emma-thompson-face-15000-h.pdf Graphic file (type pdf)
+
+<use FIGS/wsj/emma-thompson-face-15000-h.pdf>
+Package pdftex.def Info: FIGS/wsj/emma-thompson-face-15000-h.pdf used on input 
+line 521.
+(pdftex.def)             Requested size: 93.94955pt x 124.26645pt.
+
+<FIGS/wsj/emma-thompson-face-15000-v.pdf, id=336, 144.79695pt x 192.76111pt>
+File: FIGS/wsj/emma-thompson-face-15000-v.pdf Graphic file (type pdf)
+
+<use FIGS/wsj/emma-thompson-face-15000-v.pdf>
+Package pdftex.def Info: FIGS/wsj/emma-thompson-face-15000-v.pdf used on input 
+line 524.
+(pdftex.def)             Requested size: 93.94955pt x 125.07556pt.
+
+<FIGS/wsj/Emma-Thompson-wsj.png, id=337, 194.22563pt x 276.28218pt>
+File: FIGS/wsj/Emma-Thompson-wsj.png Graphic file (type png)
+
+<use FIGS/wsj/Emma-Thompson-wsj.png>
+Package pdftex.def Info: FIGS/wsj/Emma-Thompson-wsj.png used on input line 527.
+
+(pdftex.def)             Requested size: 89.2546pt x 126.96486pt.
+
+<FIGS/parrot/parrot-5000-h.pdf, id=338, 467.19897pt x 597.28497pt>
+File: FIGS/parrot/parrot-5000-h.pdf Graphic file (type pdf)
+
+<use FIGS/parrot/parrot-5000-h.pdf>
+Package pdftex.def Info: FIGS/parrot/parrot-5000-h.pdf used on input line 538.
+(pdftex.def)             Requested size: 117.43874pt x 150.132pt.
+
+<FIGS/parrot/parrot-10000-h.pdf, id=339, 470.41098pt x 601.29997pt>
+File: FIGS/parrot/parrot-10000-h.pdf Graphic file (type pdf)
+
+<use FIGS/parrot/parrot-10000-h.pdf>
+Package pdftex.def Info: FIGS/parrot/parrot-10000-h.pdf used on input line 541.
+
+(pdftex.def)             Requested size: 117.43874pt x 150.11359pt.
+
+<FIGS/parrot/parrot-5000-v.pdf, id=340, 379.40935pt x 510.6464pt>
+File: FIGS/parrot/parrot-5000-v.pdf Graphic file (type pdf)
+
+<use FIGS/parrot/parrot-5000-v.pdf>
+Package pdftex.def Info: FIGS/parrot/parrot-5000-v.pdf used on input line 549.
+(pdftex.def)             Requested size: 117.43874pt x 158.05719pt.
+
+<FIGS/parrot/parrot-10000-v.pdf, id=341, 380.52344pt x 511.22809pt>
+File: FIGS/parrot/parrot-10000-v.pdf Graphic file (type pdf)
+
+<use FIGS/parrot/parrot-10000-v.pdf>
+Package pdftex.def Info: FIGS/parrot/parrot-10000-v.pdf used on input line 552.
+
+(pdftex.def)             Requested size: 117.43874pt x 157.77701pt.
+ [12
+
+
+ <./FIGS/wsj/emma-thompson-face.png> <./FIGS/wsj/emma-thompson-face-15000-h.pdf
+> <./FIGS/wsj/emma-thompson-face-15000-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/wsj/emma-thompson-face-15000-v.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./FIGS/wsj/Emma-Thompson-wsj.png>] [13 <./FIGS/parrot/parrot-5000-h.pdf> <./
+FIGS/parrot/parrot-10000-h.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/parrot/parrot-10000-h.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+> <./FIGS/parrot/parrot-5000-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/parrot/parrot-5000-v.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+> <./FIGS/parrot/parrot-10000-v.pdf
+
+pdfTeX warning: pdflatex.exe (file ./FIGS/parrot/parrot-10000-v.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] (./report.bbl (./report.brf)
+\tf@brf=\write5
+\openout5 = `report.brf'.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
+ [14
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 913C7E136EB0A84D024B3C7EED7FB381;1322.
+(rerunfilecheck)             Checksum: 0F2C4CE4214938B0CEE7C06793D152AD;1487.
 Package rerunfilecheck Info: File `report.brf' has not changed.
 (rerunfilecheck)             Checksum: F3994910C48811CCD5E4E2F5AB9BB19F;355.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 347.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
  ) 
 Here is how much of TeX's memory you used:
- 9898 strings out of 493054
- 149416 string characters out of 6138327
- 250060 words of memory out of 5000000
- 13176 multiletter control sequences out of 15000+600000
+ 10199 strings out of 493054
+ 158266 string characters out of 6138326
+ 251062 words of memory out of 5000000
+ 13375 multiletter control sequences out of 15000+600000
  10769 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,98p,910b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,98p,1137b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-di
@@ -867,10 +1376,10 @@ s/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (7 pages, 15922965 bytes).
+Output written on report.pdf (14 pages, 77468814 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

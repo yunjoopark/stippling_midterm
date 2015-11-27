@@ -20,6 +20,7 @@
 \usepackage{multirow}
 \usepackage{color}
 \usepackage{float}
+\usepackage{caption}
 \usepackage[backref, colorlinks=true, citecolor=red, urlcolor=blue, pdfauthor={Jyh-Ming Lien}]{hyperref}
 
 
@@ -256,7 +257,7 @@ In the first step, creates initial stipples. The second step is the main part. F
 While I got the different outputs by running the hedcuter program on the same image multiple times, I obtained the same outputs by running the voronoi program. The hedcuter generates initial points randomly and make a CVT under limit iteration and given max site displacement. Since initial points set are different, the results of propagation are also changed. On the other hand, the voronoi program has the same initial points and repeats the series of process until the average of displacement of points is small enough. Thus, I could get the same output multiple times.
 
 \subsection{If you vary the number of the disks in the output images, do these implementations produce the same distribution in the final image? If not, why?}%2.2
-Figure \ref{fig:varydiskhedcut} and \ref{fig:varydiskvoronoi} show the output image of klaymen of Hedcuter and Voronoi. outputBoth methods produce the different distribution in the final image when the the number of the disks in the output images varies. As the number of the disks increases, they generate the more detailed results.
+Figure \ref{fig:varydiskhedcut} and Figure \ref{fig:varydiskvoronoi} show the output image of klaymen of Hedcuter and Voronoi. Both methods produce the different distribution in the final image when the the number of the disks varies. As the number of the disks increases, they generate the more detailed results.
 
 	\begin{figure}[ht] 
 	\begin{center} 
@@ -295,7 +296,7 @@ Figure \ref{fig:varydiskhedcut} and \ref{fig:varydiskvoronoi} show the output im
 \clearpage
 
 \subsection{If you vary the number of the disks in the output images, is a method faster than the other?}%2.3
-I could not assure that one method is faster than the other. In the hedcuter method, there are some points which oscillate after a few iteration in some cases. Thus, if there is no iteration limit, it will take infinite time because some points will oscillate infinitely. In the voronoi method, the more I increase the number of points, it takes the small number of iteration. Figure \ref{fig:klaymenrunningtimevoronoi} and \ref{fig:einsteinrunningtimevoronoi} show elapsed time of the voronoi as the number of stipples is varied. As the number of points increases, the method becomes faster. However, the elapsed time increases again when the number of points goes beyond a certain level. This is because it takes too much time for each iteration even though there are few iteration.
+I could not assure that one method is faster than the other. In the hedcuter method, there are some points which oscillate after a few iteration in some cases. Thus, if there is no iteration limit, it will take infinite time because some points will oscillate infinitely. In the voronoi method, the more I increase the number of points, it takes the small number of iteration. Figure \ref{fig:klaymenrunningtimevoronoi} and Figure \ref{fig:einsteinrunningtimevoronoi} show elapsed time of the voronoi as the number of stipples is varied. As the number of points increases, the method becomes faster. However, the elapsed time increases again when the number of points goes beyond a certain level. This is because it takes too much time for each iteration even though there are few iteration.
 
 \begin{figure}[hbpt] 
 	\begin{center} 
@@ -334,13 +335,230 @@ I could not assure that one method is faster than the other. In the hedcuter met
 \end{figure}
 
 
-\subsection{Does the size (number of pixels), image brightness or contrast of image increase or decrease their difference?}
+\subsection{Does the size (number of pixels), image brightness or contrast of image increase or decrease their difference?}%2.4
+The Hedcuter method uses \textit{-radius} option. When the \textit{-uniform\_radius} option is off, the largest disks will have the disk size of the radius value. On the other hand, the Voronoi method can render without radius limit. As shown in Figure \ref{fig:einsteinmedium100hedcuter} and Figure \ref{fig:einsteinmedium100voronoi}, when the given number of the initial points is small, this option affect the results significantly.  Thus, the number of given points should be large enough to confirm difference.
 
-\subsection{Does the type of image (human vs. machine, natural vs. urban landscapes, photo vs.painting, etc) increase or decrease their difference?}
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[-radius 5]{
+		\includegraphics[width=0.15\textwidth]{FIGS/hedcut/svg/einstein-medium-100-h-nonblack}}
+		\hspace{5mm}
+	\subfloat[-radius 10]{
+		\includegraphics[width=0.15\textwidth]{FIGS/hedcut/svg/einstein-medium-100-h-radius10}}
+		\hspace{5mm}
+	\subfloat[-radius 30]{
+		\includegraphics[width=0.15\textwidth]{FIGS/hedcut/svg/einstein-medium-100-h-radius30}}
+	\caption{Einstein-medium with 100 sample points of Hedcuter}
+	\label{fig:einsteinmedium100hedcuter} 
+	\end{center} 
+\vspace{-2.0em}
+	\end{figure}
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[-f option]{
+		\includegraphics[width=0.15\textwidth]{FIGS/voronoi/svg/einstein-medium-100-v-c}}
+		\hspace{5mm}
+	\subfloat[no option]{
+		\includegraphics[width=0.15\textwidth]{FIGS/voronoi/svg/einstein-medium-100-v-f}}
+	\caption{Einstein-medium with 100 stipples of Voronoi}
+	\label{fig:einsteinmedium100voronoi} 
+	\end{center} 
+	\end{figure}
+The resolution of Einstein-medium is 563X600 and the resolution of Einstein-Large 1180X1258. Figure \ref{fig:einsteinmedium5000} shows the result of Einstein-medium with 5000 points. Figure \ref{fig:einstein5000} shows the result of Einstein-Large with 5000 points. The more the number of pixels, the difference increases.
+	\begin{figure*}[ht] 
+	\begin{center}
+\parbox[][][c]{0.48\textwidth }{
+	\subfloat[Hedcuter]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/einstein-medium-5000-h-nonblack}}
+	\subfloat[Voronoi]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/einstein-medium-5000-v-c}}
+	\captionof{figure}{Einstein-medium}
+	\label{fig:einsteinmedium5000}
+}
+\parbox[][][c]{0.48\textwidth }{
+	\subfloat[Hedcuter]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/einstein-5000-h-nonblack}}
+	\subfloat[Voronoi]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/einstein-5000-v-c}}
+	\captionof{figure}{Einstein-large}
+	\label{fig:einstein5000}
+}
+	\end{center} 
+	\end{figure*}
+\clearpage
+
+Also, Figure \ref{fig:einsteinmedium250000} and Figure \ref{fig:einstein250000} shows the results with 250000 points. As shown in the figures, the voronoi method generates the results similart to the input image. This is because the hedcuter method has the iteration limit so that it could not generate the large number of disks; I ran the hedcuter with 500 iteration. Finally, as we can see the figures of Voronoi, it produces similar outputs if the given number of stipples is the same. On the other hand, in the hedcuter method, the quality is degraded in the high resolution under the same number of initial points.
+	\begin{figure*}[ht] 
+	\begin{center}
+\parbox[][][c]{0.48\textwidth }{
+	\subfloat[Hedcuter]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/einstein-medium-250000-h-nonblack}}
+	\subfloat[Voronoi]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/einstein-medium-250000-v-c}}
+	\captionof{figure}{Einstein-medium}
+	\label{fig:einsteinmedium250000}
+}
+\parbox[][][c]{0.48\textwidth }{
+	\subfloat[Hedcuter]{
+		\includegraphics[width=0.23\textwidth]{FIGS/hedcut/svg/einstein-250000-h-nonblack}}
+	\subfloat[Voronoi]{
+		\includegraphics[width=0.23\textwidth]{FIGS/voronoi/svg/einstein-250000-v-c}}
+	\captionof{figure}{Einstein-large}
+	\label{fig:einstein250000}
+}
+	\end{center} 
+	\end{figure*}
+
+Figure \ref{fig:poohgrayscalebhedcut} and Figure \ref{fig:poohgrayscalebhedcut} shows the results as a function of the brightness with 5000 initial points. As we can see, the hedcuter method generates better results under too bright conditions. 
+	\begin{figure}[htbp]
+	  \centering
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b1-h}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b2-h}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b3-h}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b4-h}
+	  \caption{pooh of Hedcuter as the brightness changes}
+	  \label{fig:poohgrayscalebhedcut}
+	\end{figure}
+	\begin{figure}[htbp]
+	  \centering
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b1-v}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b2-v}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b3-v}
+	\hspace{3mm}
+	  \includegraphics[width=.13\textwidth]{FIGS/pooh_grayscale/b4-v}
+	  \caption{pooh of Voronoi as the brightness changes}
+	  \label{fig:poohgrayscalebhedcut}
+	\end{figure}
+
+Figure \ref{fig:poohgrayscalechedcut} and Figure \ref{fig:poohgrayscalecvoronoi} shows the results as a function of the contrast with 5000 initial points. In bright conditions, the hedcuter produces a better result. Similarly, the hedcuter method seem to generate better results under too high contrast. This is because it represents the contour better.
+	\begin{figure}[htbp]
+	  \centering
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c1-h}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c2-h}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c3-h}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c4-h}
+	  \caption{pooh as the contrast changes}
+	  \label{fig:poohgrayscalechedcut}
+	\end{figure}
+	\begin{figure}[htbp]
+	  \centering
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c1-v}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c2-v}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c3-v}
+	\hspace{3mm}
+	  \includegraphics[width=.2\textwidth]{FIGS/pooh_grayscale/c4-v}
+	  \caption{pooh as the contrast changes}
+	  \label{fig:poohgrayscalecvoronoi}
+	\end{figure}
+\subsection{Does the type of image (human vs. machine, natural vs. urban landscapes, photo vs.painting, etc) increase or decrease their difference?}%2.5
+As I explained above, the results is affected by properties such as the number of stipples, the resolution, size or brightness. In addition, the number of iterations is important for the hedcuter method. These properties are independent on the type of image. They consist of two parts. One is the program option and the other is features of image not type. To be specific, image can have different size, brightness, contrast and color distribution. 
+\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[Urban of Hedcuter]{
+		\includegraphics[width=.4\textwidth]{FIGS/type/urban-10000-h}}
+	\hspace{5mm}
+	\subfloat[Urban of Voronoi]{
+		\includegraphics[width=.4\textwidth]{FIGS/type/urban-v}}
+	\caption{Urban} 
+	\label{fig:urban}
+	\end{center} 
+\end{figure}
+\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[Countryside of Hedcuter]{
+		\includegraphics[width=.4\textwidth]{FIGS/type/countryside-10000-h}}
+	\hspace{5mm}
+	\subfloat[Countryside of Voronoi]{
+		\includegraphics[width=.4\textwidth]{FIGS/type/countryside-v}}
+	\caption{Country} 
+	\label{fig:country}
+	\end{center} 
+\vspace{-2.0em}
+\end{figure}
+\clearpage
+\begin{figure}[] 
+	\begin{center} 
+	\subfloat[Person of Hedcuter]{
+		\includegraphics[width=.23\textwidth]{FIGS/type/person-10000-h}}
+	\hspace{10mm}
+	\subfloat[Person of Voronoi]{
+		\includegraphics[width=.23\textwidth]{FIGS/type/person-v}}
+	\caption{Person} 
+	\label{fig:person}
+	\end{center} 
+\end{figure}
+\begin{figure}[h] 
+	\begin{center} 
+	\subfloat[Robot of Hedcuter]{
+		\includegraphics[width=.23\textwidth]{FIGS/type/bb8-10000-h}}
+	\hspace{10mm}
+	\subfloat[Robot of Voronoi]{
+		\includegraphics[width=.23\textwidth]{FIGS/type/bb8-v}}
+	\caption{Robot} 
+	\label{fig:robot}
+	\end{center} 
+\end{figure}
+\clearpage
+
 \subsection{Are the outputs of these stippling methods different the hedcut images created by artists (e.g. those from the Wall Street Journal)?}
-
+The images created by artists are good of quality since aritists can control unnatural clustering of stipples. However, as shown in the Figure \ref{fig:emmatompson}, the Voronoi method generates the high quality result enough to substitue the images by artists.
+\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[Original image]{
+		\includegraphics[width=.2\textwidth]{FIGS/wsj/emma-thompson-face}}
+	\hspace{3mm}
+	\subfloat[Hedcuter-15000]{
+		\includegraphics[width=.2\textwidth]{FIGS/wsj/emma-thompson-face-15000-h}}
+	\hspace{3mm}
+	\subfloat[Voronoi-15000]{
+		 \includegraphics[width=.2\textwidth]{FIGS/wsj/emma-thompson-face-15000-v}}
+	\hspace{3mm}
+	\subfloat[Wall Street Journal]{
+		 \includegraphics[width=.19\textwidth]{FIGS/wsj/Emma-Thompson-wsj}}
+	\caption{Emma Tompson} 
+	\label{fig:emmatompson}
+	\end{center} 
+\end{figure}
 \section{Improvement of hedcuter method}
+\subsection{Adding functionality to generate colorful disks}
+Orinally, the hedcuter generates grayscale results with non-black option. I edit the \textit{hedcut.cpp} to add functionality to generate colorful disks on the hedcuter program. To do this, I changed the part of reading a file to load the image in the BGR format. I used the grayscale image during the process of making initial points and computing weighted centroid voronoi tessellation using the \textit{cvtColor()}. Finally, I change the creating disks part. when I use a non-black option, it can calculate RGB from the RGB image.
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[5000 sample points]{
+		\includegraphics[width=.25\textwidth]{FIGS/parrot/parrot-5000-h}}
+	\hspace{5mm}
+	\subfloat[10000 sample points]{
+		 \includegraphics[width=.25\textwidth]{FIGS/parrot/parrot-10000-h}}
+	\caption{Parrot of Hedcuter with non-black option} 
+	\label{fig:parrotchedcuter}
+	\end{center}
+	\end{figure}
+	\begin{figure}[ht] 
+	\begin{center} 
+	\subfloat[5000 stipples]{
+		\includegraphics[width=.25\textwidth]{FIGS/parrot/parrot-5000-v}}
+	\hspace{5mm}
+	\subfloat[100000 stipples]{
+	  \includegraphics[width=.25\textwidth]{FIGS/parrot/parrot-10000-v}}
+	\caption{Parrot of Voronoi with colour option} 
+	\label{fig:parrotcvoronoi}
+	\end{center} 
+	\end{figure}
+\clearpage
 
+
+\section{Results Analysis and Discussions}
+My first challenge came from installing OpenCV and BOOST. I tried several times and downloaded lots of versions. To be specific, BOOST should be built with 32 address-model option. After setting, I experienced the second difficulty. The programs were really slow so that I had to wait too much time to run the programs. I could resolve this problem using release mode. Since I was totally unfamiliar with OpenCV, I referred to OpenCV documentation \href{http://docs.opencv.org/}{OpenCV docs}.  I struggled sometimes because I referred documentations of different versions. For example, \textit{scalar(a, b, c)} uses a BGR color in some version. Even though I could not finish the midterm perfectly, I could improve my skills to read the open source and use it. I studied two stippling methods. They generate good quality results in most cases. I calculated the elapsed time of each program to compare their performance. For comparison, the Voronoi method produces better result. However, if we run the Hedcuter with enough iterations and a appropriate disk size, it also generates high quality results. 
 \bibliographystyle{plain}
 \bibliography{report}
 

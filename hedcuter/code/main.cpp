@@ -51,7 +51,8 @@ int main(int argc, char ** argv)
 		else img_filename = argv[i];
 	}
 
-	cv::Mat image = cv::imread(img_filename.c_str(), CV_LOAD_IMAGE_GRAYSCALE);   // Read the file
+	// cv::Mat image = cv::imread(img_filename.c_str(), CV_LOAD_IMAGE_GRAYSCALE);   // Read the file
+	cv::Mat image = cv::imread(img_filename.c_str(), CV_LOAD_IMAGE_COLOR);	// YJ load the image in the BGR format 
 
 	if (!image.data)                              // Check for invalid input
 	{
@@ -103,6 +104,7 @@ int main(int argc, char ** argv)
 	{
 		std::cout << "Completed in " << hedcut.elapsed_time << " seconds." << std::endl;
 		cout << "- Saved " << ss.str() << endl;
+		//cv::waitKey();
 	}
 	return 0;
 }

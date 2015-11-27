@@ -1,1 +1,0 @@
-inkscape -D -z --file=klaymen-100000-h-nonblack.svg --export-pdf=klaymen-100000-h-nonblack.pdf --export-latex

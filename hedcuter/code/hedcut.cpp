@@ -20,10 +20,14 @@ Hedcut::Hedcut()
 
 bool Hedcut::build(cv::Mat & input_image, int n)
 {
-	start = clock();
+	cv::Mat input_GRAY;
+	// YJ cvtColor(InputArrary src, OutputArray dst, int code, int dstCn = 0);
+	cv::cvtColor(input_image, input_GRAY, CV_RGB2GRAY);
+
+	//start = clock();
 	//sample n points
 	std::vector<cv::Point2d> pts;
-	sample_initial_points(input_image, n, pts);
+	sample_initial_points(input_GRAY, n, pts);
 
 	//initialize cvt
 	CVT cvt;
@@ -33,12 +37,12 @@ bool Hedcut::build(cv::Mat & input_image, int n)
 
 	//compute weighted centroidal voronoi tessellation
 	//finish = cvt.compute_weighted_cvt(input_image, pts);
-	cvt.compute_weighted_cvt(input_image, pts);
+	cvt.compute_weighted_cvt(input_GRAY, pts);
 
 	//create disks
 	create_disks(input_image, cvt);
-	finish = clock();
-	elapsed_time = (finish - start) / (double)CLOCKS_PER_SEC;
+	//finish = clock();
+	//elapsed_time = (finish - start) / (double)CLOCKS_PER_SEC;
 	return true;
 }
 
@@ -85,22 +89,49 @@ void Hedcut::create_disks(cv::Mat & img, CVT & cvt)
 {
 	disks.clear();
 
+	cv::Mat img_gray;
+	cv::cvtColor(img, img_gray, CV_RGB2GRAY);
+
+	if (debug)
+	{
+		cv::namedWindow("is gray", cv::WINDOW_AUTOSIZE);// Create a window for display.
+		cv::imshow("is gray", img);                     // Show our image inside it.
+		//cv::waitKey(0);                               // Wait for a keystroke in the window
+	}
+
 	//create disks from cvt
 	for (auto& cell : cvt.getCells())
 	{
 		//compute avg intensity
 		unsigned int total = 0;
+		float total_r = 0;
+		float total_g = 0;
+		float total_b = 0;
 		for (auto & pix : cell.coverage)
 		{
-			total += img.at<uchar>(pix.x, pix.y);
+			total += img_gray.at<uchar>(pix.x, pix.y);
+
+			// YJ Vec3b intensity = img.at<Vec3b>(y, x);
+			// uchar blue = intensity.val[0];
+			// uchar green = intensity.val[1];
+			// uchar red = intensity.val[2];
+			total_b += img.at<cv::Vec3b>(pix.x, pix.y)[0];
+			total_g += img.at<cv::Vec3b>(pix.x, pix.y)[1];
+			total_r += img.at<cv::Vec3b>(pix.x, pix.y)[2];
 		}
 		float avg_v = floor(total * 1.0f/ cell.coverage.size());
+		float r = floor(total_r * 1.0f / cell.coverage.size());
+		float g = floor(total_g * 1.0f / cell.coverage.size());
+		float b = floor(total_b * 1.0f / cell.coverage.size());
 
 		//create a disk
 		HedcutDisk disk;
 		disk.center.x = cell.site.y; //x = col
 		disk.center.y = cell.site.x; //y = row
-		disk.color = (black_disk) ? cv::Scalar::all(0) : cv::Scalar::all(avg_v);
+
+		// YJ all(V) returns a scalar with all elements set to V0
+		// YJ Scalar(a, b, c): a RGB color such as: Red = c, Green = b and Blue = a
+		disk.color = (black_disk) ? cv::Scalar::all(0) : cv::Scalar(r, g, b);
 		disk.radius = (uniform_disk_size) ? disk_size : (100 * disk_size / (avg_v + 100));
 
 		//remember
